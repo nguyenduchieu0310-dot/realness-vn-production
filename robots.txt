@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /tim-kiem/
+Disallow: /so-sanh-can/
+Disallow: /*?*
+
+Sitemap: https://realness.vn/sitemap.xml
