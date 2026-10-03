@@ -7,13 +7,65 @@
       name="description"
       content="Realness giúp đọc dữ liệu dự án, so sánh từng căn và nhìn rõ đánh đổi trước khi quyết định. Bản mẫu dùng dữ liệu minh họa."
     />
-    <meta name="robots" content="noindex,nofollow,noarchive" />
+    <meta name="robots" content="index,follow" />
     <title>Realness - Hiểu dự án. Chọn đúng căn.</title>
-    <script type="module" crossorigin src="/assets/index-DQERBI_p.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DOdsRKnt.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>" />
+    <style>body{color:#f1f5f9;background-color:#090d16;margin:0;font-family:Inter,system-ui,-apple-system,sans-serif}@keyframes spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}</style>
+    <script>
+      // 1. Safe fallback for React Refresh preamble in dev mode
+      window.$RefreshReg$ = window.$RefreshReg$ || function() {};
+      window.$RefreshSig$ = window.$RefreshSig$ || function() { return function(type) { return type; }; };
+
+      // 2. Unregister any stale service workers that could intercept localhost
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(regs) {
+          for (var reg of regs) { reg.unregister(); }
+        }).catch(function() {});
+      }
+
+      // 3. Catch critical uncaught boot errors
+      window.addEventListener('error', function(e) {
+        console.error('[Realness Boot Error]', e);
+        var loader = document.getElementById('boot-loader');
+        if (loader) {
+          loader.innerHTML = '<div style="max-width:560px;background:#0f172a;border:1px solid #ef4444;border-radius:12px;padding:24px;text-align:left;box-shadow:0 10px 30px rgba(0,0,0,0.5);">' +
+            '<h3 style="color:#ef4444;margin:0 0 10px 0;">⚠️ Sự cố tải trang (Boot Error)</h3>' +
+            '<p style="color:#cbd5e1;font-size:13px;line-height:1.5;margin:0 0 12px 0;">' + (e.message || 'Lỗi không xác định khi tải module script.') + '</p>' +
+            '<pre style="background:#020617;color:#f87171;padding:10px;border-radius:6px;font-size:11px;overflow-x:auto;">' + (e.filename ? e.filename + ':' + e.lineno : 'Module Load Exception') + '</pre>' +
+            '<div style="display:flex;gap:10px;margin-top:16px;">' +
+            '<button onclick="location.reload(true)" style="background:#10b981;color:#000;border:none;padding:8px 16px;border-radius:6px;font-weight:bold;cursor:pointer;">Tải lại trang (F5)</button>' +
+            '<button onclick="localStorage.clear();sessionStorage.clear();location.reload(true)" style="background:#334155;color:#fff;border:none;padding:8px 16px;border-radius:6px;cursor:pointer;">Xóa Cache & Tải lại</button>' +
+            '</div></div>';
+        }
+      });
+
+      window.addEventListener('unhandledrejection', function(e) {
+        console.error('[Realness Promise Rejection]', e);
+      });
+
+      // Watchdog: Nếu sau 2.5s chưa mount, hiện nút reload nhanh
+      setTimeout(function() {
+        var loader = document.getElementById('boot-loader');
+        if (loader) {
+          var tip = document.getElementById('boot-tip');
+          if (tip) tip.style.display = 'block';
+        }
+      }, 2500);
+    </script>
+    <script type="module" crossorigin src="/assets/index-qcf4DeUo.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CASZUzcR.css">
   </head>
-  <body>
-    <div id="root"></div>
+  <body style="background-color: #090d16; margin: 0; color: #f1f5f9;">
+    <div id="root">
+      <div id="boot-loader" style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px;">
+        <div style="width: 36px; height: 36px; border: 3px solid #1e293b; border-top-color: #10b981; border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 16px;"></div>
+        <div style="font-size: 14px; color: #94a3b8; font-weight: 600;">Đang khởi động Realness AI Dashboard...</div>
+        <div id="boot-tip" style="display:none; margin-top: 16px; text-align: center;">
+          <p style="color: #94a3b8; font-size: 13px; margin: 0 0 10px 0;">Nếu trang chưa vào được do bộ nhớ đệm cũ:</p>
+          <button onclick="location.reload(true)" style="background:#10b981; color:#0f172a; font-weight:700; border:none; padding:8px 18px; border-radius:6px; cursor:pointer; font-size:13px;">Tải lại trang (F5)</button>
+        </div>
+      </div>
+    </div>
     <noscript>
       <main>
         <h1>Realness</h1>
@@ -25,6 +77,6 @@
           <a href="/du-an/demo-residence-a/can-ho/DEMO-A-1201/">Hồ sơ căn DEMO-A-1201</a>
         </nav>
       </main>
-    </noscript>
+    </noscript>
   </body>
 </html>
