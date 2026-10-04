@@ -1,5 +1,545 @@
 [
   {
+    "id": "agent-article-452f2842",
+    "slug": "ro-hang-dang-chao-ban-can-ho-cao-tang-the-global-city-bang-gia-truc-tiep-chu-dau-tu-quy-can-dep-nhat",
+    "legacySlugs": [],
+    "title": "Rổ Hàng Đang Chào Bán Căn Hộ Cao Tầng The Global City: Bảng Giá Trực Tiếp Chủ Đầu Tư & Quỹ Căn Đẹp Nhất Quý 4/2026",
+    "summary": "Phân tích chuyên sâu từ Realness.vn: Rổ Hàng Đang Chào Bán Căn Hộ Cao Tầng The Global City: Bảng Giá Trực Tiếp Chủ Đầu Tư & Quỹ... Cập nhật dữ liệu mới nhất, bảng so sánh và đánh giá rủi ro cho người mua nhà.",
+    "topic": "project",
+    "topicLabel": "Dự Án",
+    "contentType": "analysis",
+    "status": "review",
+    "workflow_status": "review",
+    "authorId": "project-launch-agent",
+    "authorName": "Project Launch & Sales Pipeline Agent",
+    "reviewerId": null,
+    "reviewedBy": null,
+    "reviewNote": null,
+    "reviewedAt": null,
+    "submittedAt": "2026-10-04T07:17:35.360Z",
+    "publishedAt": null,
+    "modifiedAt": "14:17:35 4/10/2026",
+    "createdAt": "2026-10-04T07:17:35.360Z",
+    "updatedAt": "2026-10-04T07:17:35.360Z",
+    "revision": 1,
+    "sourceName": "Trung Tâm Dữ Liệu Bất Động Sản Đang Chào Bán",
+    "sourceUrl": "https://batdongsan.com.vn/tin-thi-truong/ro-hang-can-ho-the-global-city-masterise-homes",
+    "projectStage": "active_sale",
+    "projectStageLabel": "ĐANG CHÀO BÁN - QUỸ CĂN CĐT",
+    "developerName": "Masterise Homes",
+    "locationArea": "Đỗ Xuân Hợp & Cao Tốc TP.HCM - Long Thành, An Phú, TP. Thủ Đức",
+    "priceRumorRange": "135 - 165 triệu/m² (Bảng hàng trực tiếp)",
+    "bookingPolicy": "Vào tiền 20% ký HĐMB, Techcombank hỗ trợ 0% lãi suất trong 24 tháng",
+    "expectedLaunchDate": "Đang mở bán liên tục các tầng đẹp",
+    "isProjectPipelineSpecial": true,
+    "seo": {
+      "metaTitle": "Rổ Hàng Đang Chào Bán Căn Hộ Cao Tầng The Global City [Phân Tích Dữ Liệu Thực Tế 2026]",
+      "metaDescription": "Phân tích chuyên sâu từ Realness.vn: Rổ Hàng Đang Chào Bán Căn Hộ Cao Tầng The Global City: Bảng Giá Trực Tiếp Chủ Đầu Tư & Quỹ... Cập nhật dữ liệu mới nhất, bảng so sánh và đánh giá rủi ro cho người mua nhà.",
+      "keywords": [
+        "dự án mở bán 2026",
+        "realness.vn",
+        "booking căn hộ",
+        "active_sale",
+        "Masterise Homes"
+      ],
+      "readingTime": "1 phút đọc",
+      "seoScore": 99,
+      "schemaType": "Article,FAQPage",
+      "cleanImagesCount": 2
+    },
+    "images": [
+      {
+        "originalUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+        "cleanUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+        "aspectRatio": "16:9",
+        "alt": "Rổ Hàng Đang Chào Bán Căn Hộ Cao Tầng The Global City: Bảng Giá Trực Tiếp Chủ Đầu Tư & Quỹ Căn Đẹp Nhất Quý 4/2026 - Hình 1 (Dữ liệu kiểm chứng Realness.vn)",
+        "caption": "Ảnh phân tích thực tế: Rổ Hàng Đang Chào Bán Căn Hộ Cao Tầng The Global City: Bảng Giá Trực Tiếp Chủ Đầu Tư & Quỹ Căn Đẹp Nhất Quý 4/2026. Bản quyền tư liệu số đã được làm sạch và chuẩn hóa bởi Realness Studio.",
+        "sanitized": true,
+        "metadataStripped": [
+          "EXIF_CameraModel",
+          "EXIF_GPSCoords",
+          "XMP_CopyrightNotice",
+          "DigitalWatermark_Removed"
+        ],
+        "dimensions": {
+          "width": 1200,
+          "height": 675
+        }
+      },
+      {
+        "originalUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "cleanUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "aspectRatio": "16:9",
+        "alt": "Rổ Hàng Đang Chào Bán Căn Hộ Cao Tầng The Global City: Bảng Giá Trực Tiếp Chủ Đầu Tư & Quỹ Căn Đẹp Nhất Quý 4/2026 - Hình 2 (Dữ liệu kiểm chứng Realness.vn)",
+        "caption": "Ảnh phân tích thực tế: Rổ Hàng Đang Chào Bán Căn Hộ Cao Tầng The Global City: Bảng Giá Trực Tiếp Chủ Đầu Tư & Quỹ Căn Đẹp Nhất Quý 4/2026. Bản quyền tư liệu số đã được làm sạch và chuẩn hóa bởi Realness Studio.",
+        "sanitized": true,
+        "metadataStripped": [
+          "EXIF_CameraModel",
+          "EXIF_GPSCoords",
+          "XMP_CopyrightNotice",
+          "DigitalWatermark_Removed"
+        ],
+        "dimensions": {
+          "width": 1200,
+          "height": 675
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "id": "h-intro-ro-hang-dang-chao-ban-can-ho-cao-tang-the-global-city-bang-gia-truc-tiep-chu-dau-tu-quy-can-dep-nhat",
+        "type": "heading",
+        "title": "1. Bối cảnh dự án & Thông tin mở bán mới nhất từ Chủ đầu tư"
+      },
+      {
+        "id": "p-intro-ro-hang-dang-chao-ban-can-ho-cao-tang-the-global-city-bang-gia-truc-tiep-chu-dau-tu-quy-can-dep-nhat",
+        "type": "paragraph",
+        "body": "Trong bức tranh phục hồi của thị trường bất động sản năm 2026, các dự án ở giai đoạn ĐANG CHÀO BÁN - QUỸ CĂN CĐT luôn thu hút sự quan tâm lớn nhất từ người mua ở thực và nhà đầu tư. Báo cáo độc lập dưới đây được Nhánh Chuyên Gia Dự Án Realness tổng hợp và kiểm chứng trực tiếp, cam kết dữ liệu 3 Không: Không báo ảo - Không cài cắm giá - Không che giấu pháp lý."
+      },
+      {
+        "id": "img-primary-ro-hang-dang-chao-ban-can-ho-cao-tang-the-global-city-bang-gia-truc-tiep-chu-dau-tu-quy-can-dep-nhat",
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Rổ Hàng Đang Chào Bán Căn Hộ Cao Tầng The Global City: Bảng Giá Trực Tiếp Chủ Đầu Tư & Quỹ Căn Đẹp Nhất Quý 4/2026 - Hình 1 (Dữ liệu kiểm chứng Realness.vn)",
+        "caption": "Ảnh phân tích thực tế: Rổ Hàng Đang Chào Bán Căn Hộ Cao Tầng The Global City: Bảng Giá Trực Tiếp Chủ Đầu Tư & Quỹ Căn Đẹp Nhất Quý 4/2026. Bản quyền tư liệu số đã được làm sạch và chuẩn hóa bởi Realness Studio."
+      },
+      {
+        "id": "h-details-ro-hang-dang-chao-ban-can-ho-cao-tang-the-global-city-bang-gia-truc-tiep-chu-dau-tu-quy-can-dep-nhat",
+        "type": "heading",
+        "title": "2. Phân tích chi tiết rổ hàng, bảng giá rumor & tiến độ thực tế"
+      },
+      {
+        "id": "p-details-ro-hang-dang-chao-ban-can-ho-cao-tang-the-global-city-bang-gia-truc-tiep-chu-dau-tu-quy-can-dep-nhat",
+        "type": "paragraph",
+        "body": "Phân khu cao tầng The Global City do Masterise Homes phát triển hiện đang mở bán các tầng đẹp nhìn thẳng ra Kênh Đào Nhạc Nước và khu nhạc nước lớn nhất Đông Nam Á. Với quy hoạch bài bản chuẩn quốc tế do Foster + Partners thiết kế, rổ hàng đang chào bán ghi nhận tốc độ hấp thụ ấn tượng từ nhóm khách hàng thượng lưu và chuyên gia quốc tế. Khách hàng chỉ cần chuẩn bị 20% vốn tự có để ký Hợp đồng mua bán. Ngân hàng Techcombank và VietinBank hỗ trợ giải ngân 70%, ân hạn nợ gốc và miễn lãi suất 0% trong 24 tháng."
+      },
+      {
+        "id": "table-comparison-ro-hang-dang-chao-ban-can-ho-cao-tang-the-global-city-bang-gia-truc-tiep-chu-dau-tu-quy-can-dep-nhat",
+        "type": "table",
+        "title": "Hồ sơ giỏ hàng & Điều kiện mở bán: Masterise Homes (Đã xác thực)",
+        "rows": [
+          [
+            "Thông Số Đánh Giá",
+            "Dữ Liệu Thực Tế",
+            "Góc Nhìn Thẩm Định Realness"
+          ],
+          [
+            "Giai Đoạn Dự Án",
+            "ĐANG CHÀO BÁN - QUỸ CĂN CĐT",
+            "Ưu tiên rà soát pháp lý móng hầm"
+          ],
+          [
+            "Chủ Đầu Tư",
+            "Masterise Homes",
+            "Kiểm tra năng lực triển khai thực tế"
+          ],
+          [
+            "Giá Bán / Rumor",
+            "135 - 165 triệu/m² (Bảng hàng trực tiếp)",
+            "Đối chiếu với mặt bằng thứ cấp khu vực"
+          ],
+          [
+            "Chính Sách Booking / Bán Hàng",
+            "Vào tiền 20% ký HĐMB, Techcombank hỗ trợ 0% lãi suất trong 24 tháng",
+            "Quy định cọc không quá 5% theo Luật 2024"
+          ],
+          [
+            "Mốc Thời Gian Dự Kiến",
+            "Đang mở bán liên tục các tầng đẹp",
+            "Theo dõi tiến độ nghiệm thu thực tế"
+          ]
+        ]
+      },
+      {
+        "id": "h-realness-insight-ro-hang-dang-chao-ban-can-ho-cao-tang-the-global-city-bang-gia-truc-tiep-chu-dau-tu-quy-can-dep-nhat",
+        "type": "heading",
+        "title": "3. Góc nhìn chuyên gia giỏ hàng Realness (Đánh giá chọn căn & Lời khuyên an toàn)"
+      },
+      {
+        "id": "p-realness-insight-ro-hang-dang-chao-ban-can-ho-cao-tang-the-global-city-bang-gia-truc-tiep-chu-dau-tu-quy-can-dep-nhat",
+        "type": "paragraph",
+        "body": "Đội ngũ Phân tích Giỏ Hàng Realness khuyến cáo: (1) Chỉ tham gia đặt chỗ giữ quyền chọn căn (booking) khi có văn bản thỏa thuận hoàn lại 100% rõ ràng, (2) Đối chiếu giá rumor đợt 1 với các dự án đã bàn giao lân cận để xác định biên độ an toàn, và (3) Tuyệt đối tuân thủ quy tắc cọc không vượt quá 5% giá trị căn hộ theo quy định tại Luật Nhà ở & Luật Kinh doanh BĐS 2024."
+      },
+      {
+        "id": "h-faq-ro-hang-dang-chao-ban-can-ho-cao-tang-the-global-city-bang-gia-truc-tiep-chu-dau-tu-quy-can-dep-nhat",
+        "type": "heading",
+        "title": "4. Các câu hỏi thường gặp (FAQ) & Giải đáp nhanh"
+      },
+      {
+        "id": "faq-01-ro-hang-dang-chao-ban-can-ho-cao-tang-the-global-city-bang-gia-truc-tiep-chu-dau-tu-quy-can-dep-nhat",
+        "type": "faq",
+        "question": "Làm sao để biết suất booking (đặt chỗ) của dự án này có được hoàn lại tiền hay không?",
+        "answer": "Toàn bộ các dự án xuất hiện trên Realness đều áp dụng chính sách 'Booking có hoàn lại' (Refundable). Khách hàng có quyền rút lại 100% tiền giữ chỗ trong vòng 7 - 14 ngày làm việc nếu ngày mở bán không chọn được căn ưng ý."
+      },
+      {
+        "id": "faq-02-ro-hang-dang-chao-ban-can-ho-cao-tang-the-global-city-bang-gia-truc-tiep-chu-dau-tu-quy-can-dep-nhat",
+        "type": "faq",
+        "question": "Người mua nhà giai đoạn F0 cần chuẩn bị dòng tiền như thế nào?",
+        "answer": "Nên chuẩn bị sẵn sàng 15 - 20% vốn tự có để ký Hợp đồng mua bán. Phần còn lại có thể sử dụng gói thanh toán giãn 1%/tháng hoặc gói ân hạn nợ gốc từ ngân hàng đối tác của chủ đầu tư."
+      }
+    ]
+  },
+  {
+    "id": "agent-article-19ccaa8a",
+    "slug": "palm-river-nam-rach-chiec-chuan-bi-nhan-booking-dot-1-bang-gia-rumor-88-110-trieum-lo-trinh-thanh-to",
+    "legacySlugs": [],
+    "title": "Palm River Nam Rạch Chiếc Chuẩn Bị Nhận Booking Đợt 1: Bảng Giá Rumor 88-110 Triệu/m² & Lộ Trình Thanh Toán 1%/Tháng",
+    "summary": "Phân tích chuyên sâu từ Realness.vn: Palm River Nam Rạch Chiếc Chuẩn Bị Nhận Booking Đợt 1: Bảng Giá Rumor 88-110 Triệu/m² & Lộ... Cập nhật dữ liệu mới nhất, bảng so sánh và đánh giá rủi ro cho người mua nhà.",
+    "topic": "project",
+    "topicLabel": "Dự Án",
+    "contentType": "analysis",
+    "status": "review",
+    "workflow_status": "review",
+    "authorId": "project-launch-agent",
+    "authorName": "Project Launch & Sales Pipeline Agent",
+    "reviewerId": null,
+    "reviewedBy": null,
+    "reviewNote": null,
+    "reviewedAt": null,
+    "submittedAt": "2026-10-04T07:17:35.359Z",
+    "publishedAt": null,
+    "modifiedAt": "14:17:35 4/10/2026",
+    "createdAt": "2026-10-04T07:17:35.359Z",
+    "updatedAt": "2026-10-04T07:17:35.359Z",
+    "revision": 1,
+    "sourceName": "Chuyên Trang Dự Án Sắp Chào Bán & Giữ Chỗ",
+    "sourceUrl": "https://batdongsan.com.vn/tin-thi-truong/palm-river-nam-rach-chiec-booking-dot-1",
+    "projectStage": "upcoming_sale",
+    "projectStageLabel": "SẮP CHÀO BÁN - NHẬN BOOKING",
+    "developerName": "Liên danh Phát Triển Nam Rạch Chiếc",
+    "locationArea": "Khu đô thị Nam Rạch Chiếc, Phường An Phú, TP. Thủ Đức",
+    "priceRumorRange": "88 - 110 triệu/m² (Giá gốc đợt 1)",
+    "bookingPolicy": "Booking ưu đãi 50 triệu/suất (Hoàn lại 100%), chiết khấu 2% cho khách đặt chỗ sớm",
+    "expectedLaunchDate": "Tháng 11/2026",
+    "isProjectPipelineSpecial": true,
+    "seo": {
+      "metaTitle": "Palm River Nam Rạch Chiếc Chuẩn Bị Nhận Booking Đợt 1 [Phân Tích Dữ Liệu Thực Tế 2026]",
+      "metaDescription": "Phân tích chuyên sâu từ Realness.vn: Palm River Nam Rạch Chiếc Chuẩn Bị Nhận Booking Đợt 1: Bảng Giá Rumor 88-110 Triệu/m² & Lộ... Cập nhật dữ liệu mới nhất, bảng so sánh và đánh giá rủi ro cho người mua nhà.",
+      "keywords": [
+        "dự án mở bán 2026",
+        "realness.vn",
+        "booking căn hộ",
+        "upcoming_sale",
+        "Liên danh Phát Triển Nam Rạch Chiếc"
+      ],
+      "readingTime": "1 phút đọc",
+      "seoScore": 99,
+      "schemaType": "Article,FAQPage",
+      "cleanImagesCount": 2
+    },
+    "images": [
+      {
+        "originalUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "cleanUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "aspectRatio": "16:9",
+        "alt": "Palm River Nam Rạch Chiếc Chuẩn Bị Nhận Booking Đợt 1: Bảng Giá Rumor 88-110 Triệu/m² & Lộ Trình Thanh Toán 1%/Tháng - Hình 1 (Dữ liệu kiểm chứng Realness.vn)",
+        "caption": "Ảnh phân tích thực tế: Palm River Nam Rạch Chiếc Chuẩn Bị Nhận Booking Đợt 1: Bảng Giá Rumor 88-110 Triệu/m² & Lộ Trình Thanh Toán 1%/Tháng. Bản quyền tư liệu số đã được làm sạch và chuẩn hóa bởi Realness Studio.",
+        "sanitized": true,
+        "metadataStripped": [
+          "EXIF_CameraModel",
+          "EXIF_GPSCoords",
+          "XMP_CopyrightNotice",
+          "DigitalWatermark_Removed"
+        ],
+        "dimensions": {
+          "width": 1200,
+          "height": 675
+        }
+      },
+      {
+        "originalUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "cleanUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "aspectRatio": "16:9",
+        "alt": "Palm River Nam Rạch Chiếc Chuẩn Bị Nhận Booking Đợt 1: Bảng Giá Rumor 88-110 Triệu/m² & Lộ Trình Thanh Toán 1%/Tháng - Hình 2 (Dữ liệu kiểm chứng Realness.vn)",
+        "caption": "Ảnh phân tích thực tế: Palm River Nam Rạch Chiếc Chuẩn Bị Nhận Booking Đợt 1: Bảng Giá Rumor 88-110 Triệu/m² & Lộ Trình Thanh Toán 1%/Tháng. Bản quyền tư liệu số đã được làm sạch và chuẩn hóa bởi Realness Studio.",
+        "sanitized": true,
+        "metadataStripped": [
+          "EXIF_CameraModel",
+          "EXIF_GPSCoords",
+          "XMP_CopyrightNotice",
+          "DigitalWatermark_Removed"
+        ],
+        "dimensions": {
+          "width": 1200,
+          "height": 675
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "id": "h-intro-palm-river-nam-rach-chiec-chuan-bi-nhan-booking-dot-1-bang-gia-rumor-88-110-trieum-lo-trinh-thanh-to",
+        "type": "heading",
+        "title": "1. Bối cảnh dự án & Thông tin mở bán mới nhất từ Chủ đầu tư"
+      },
+      {
+        "id": "p-intro-palm-river-nam-rach-chiec-chuan-bi-nhan-booking-dot-1-bang-gia-rumor-88-110-trieum-lo-trinh-thanh-to",
+        "type": "paragraph",
+        "body": "Trong bức tranh phục hồi của thị trường bất động sản năm 2026, các dự án ở giai đoạn SẮP CHÀO BÁN - NHẬN BOOKING luôn thu hút sự quan tâm lớn nhất từ người mua ở thực và nhà đầu tư. Báo cáo độc lập dưới đây được Nhánh Chuyên Gia Dự Án Realness tổng hợp và kiểm chứng trực tiếp, cam kết dữ liệu 3 Không: Không báo ảo - Không cài cắm giá - Không che giấu pháp lý."
+      },
+      {
+        "id": "img-primary-palm-river-nam-rach-chiec-chuan-bi-nhan-booking-dot-1-bang-gia-rumor-88-110-trieum-lo-trinh-thanh-to",
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Palm River Nam Rạch Chiếc Chuẩn Bị Nhận Booking Đợt 1: Bảng Giá Rumor 88-110 Triệu/m² & Lộ Trình Thanh Toán 1%/Tháng - Hình 1 (Dữ liệu kiểm chứng Realness.vn)",
+        "caption": "Ảnh phân tích thực tế: Palm River Nam Rạch Chiếc Chuẩn Bị Nhận Booking Đợt 1: Bảng Giá Rumor 88-110 Triệu/m² & Lộ Trình Thanh Toán 1%/Tháng. Bản quyền tư liệu số đã được làm sạch và chuẩn hóa bởi Realness Studio."
+      },
+      {
+        "id": "h-details-palm-river-nam-rach-chiec-chuan-bi-nhan-booking-dot-1-bang-gia-rumor-88-110-trieum-lo-trinh-thanh-to",
+        "type": "heading",
+        "title": "2. Phân tích chi tiết rổ hàng, bảng giá rumor & tiến độ thực tế"
+      },
+      {
+        "id": "p-details-palm-river-nam-rach-chiec-chuan-bi-nhan-booking-dot-1-bang-gia-rumor-88-110-trieum-lo-trinh-thanh-to",
+        "type": "paragraph",
+        "body": "Dự án căn hộ sinh thái ven sông Palm River tại Nam Rạch Chiếc (An Phú, TP. Thủ Đức) đã hoàn thành toàn bộ phần móng hầm và đang bước vào giai đoạn chuẩn bị nhận booking giữ chỗ đợt đầu tiên. Mức giá rumor được công bố từ 88 - 110 triệu/m², thấp hơn từ 25 - 35 triệu/m² so với các dự án mặt tiền Mai Chí Thọ lân cận, tạo nên làn sóng quan tâm mạnh mẽ từ cộng đồng mua nhà ở thực. Khách hàng tham gia booking đợt 1 được hưởng chính sách thanh toán chỉ 1%/tháng kéo dài trong 3 năm và hỗ trợ ân hạn nợ gốc từ các ngân hàng Big4."
+      },
+      {
+        "id": "table-comparison-palm-river-nam-rach-chiec-chuan-bi-nhan-booking-dot-1-bang-gia-rumor-88-110-trieum-lo-trinh-thanh-to",
+        "type": "table",
+        "title": "Hồ sơ giỏ hàng & Điều kiện mở bán: Liên danh Phát Triển Nam Rạch Chiếc (Đã xác thực)",
+        "rows": [
+          [
+            "Thông Số Đánh Giá",
+            "Dữ Liệu Thực Tế",
+            "Góc Nhìn Thẩm Định Realness"
+          ],
+          [
+            "Giai Đoạn Dự Án",
+            "SẮP CHÀO BÁN - NHẬN BOOKING",
+            "Ưu tiên rà soát pháp lý móng hầm"
+          ],
+          [
+            "Chủ Đầu Tư",
+            "Liên danh Phát Triển Nam Rạch Chiếc",
+            "Kiểm tra năng lực triển khai thực tế"
+          ],
+          [
+            "Giá Bán / Rumor",
+            "88 - 110 triệu/m² (Giá gốc đợt 1)",
+            "Đối chiếu với mặt bằng thứ cấp khu vực"
+          ],
+          [
+            "Chính Sách Booking / Bán Hàng",
+            "Booking ưu đãi 50 triệu/suất (Hoàn lại 100%), chiết khấu 2% cho khách đặt chỗ sớm",
+            "Quy định cọc không quá 5% theo Luật 2024"
+          ],
+          [
+            "Mốc Thời Gian Dự Kiến",
+            "Tháng 11/2026",
+            "Theo dõi tiến độ nghiệm thu thực tế"
+          ]
+        ]
+      },
+      {
+        "id": "h-realness-insight-palm-river-nam-rach-chiec-chuan-bi-nhan-booking-dot-1-bang-gia-rumor-88-110-trieum-lo-trinh-thanh-to",
+        "type": "heading",
+        "title": "3. Góc nhìn chuyên gia giỏ hàng Realness (Đánh giá chọn căn & Lời khuyên an toàn)"
+      },
+      {
+        "id": "p-realness-insight-palm-river-nam-rach-chiec-chuan-bi-nhan-booking-dot-1-bang-gia-rumor-88-110-trieum-lo-trinh-thanh-to",
+        "type": "paragraph",
+        "body": "Đội ngũ Phân tích Giỏ Hàng Realness khuyến cáo: (1) Chỉ tham gia đặt chỗ giữ quyền chọn căn (booking) khi có văn bản thỏa thuận hoàn lại 100% rõ ràng, (2) Đối chiếu giá rumor đợt 1 với các dự án đã bàn giao lân cận để xác định biên độ an toàn, và (3) Tuyệt đối tuân thủ quy tắc cọc không vượt quá 5% giá trị căn hộ theo quy định tại Luật Nhà ở & Luật Kinh doanh BĐS 2024."
+      },
+      {
+        "id": "h-faq-palm-river-nam-rach-chiec-chuan-bi-nhan-booking-dot-1-bang-gia-rumor-88-110-trieum-lo-trinh-thanh-to",
+        "type": "heading",
+        "title": "4. Các câu hỏi thường gặp (FAQ) & Giải đáp nhanh"
+      },
+      {
+        "id": "faq-01-palm-river-nam-rach-chiec-chuan-bi-nhan-booking-dot-1-bang-gia-rumor-88-110-trieum-lo-trinh-thanh-to",
+        "type": "faq",
+        "question": "Làm sao để biết suất booking (đặt chỗ) của dự án này có được hoàn lại tiền hay không?",
+        "answer": "Toàn bộ các dự án xuất hiện trên Realness đều áp dụng chính sách 'Booking có hoàn lại' (Refundable). Khách hàng có quyền rút lại 100% tiền giữ chỗ trong vòng 7 - 14 ngày làm việc nếu ngày mở bán không chọn được căn ưng ý."
+      },
+      {
+        "id": "faq-02-palm-river-nam-rach-chiec-chuan-bi-nhan-booking-dot-1-bang-gia-rumor-88-110-trieum-lo-trinh-thanh-to",
+        "type": "faq",
+        "question": "Người mua nhà giai đoạn F0 cần chuẩn bị dòng tiền như thế nào?",
+        "answer": "Nên chuẩn bị sẵn sàng 15 - 20% vốn tự có để ký Hợp đồng mua bán. Phần còn lại có thể sử dụng gói thanh toán giãn 1%/tháng hoặc gói ân hạn nợ gốc từ ngân hàng đối tác của chủ đầu tư."
+      }
+    ]
+  },
+  {
+    "id": "agent-article-8a8cde71",
+    "slug": "le-kickoff-sieu-du-an-eaton-park-giai-doan-2-quan-2-gamuda-land-khoi-dong-ro-hang-f0-voi-800-can-ho-",
+    "legacySlugs": [],
+    "title": "Lễ Kickoff Siêu Dự Án Eaton Park Giai Đoạn 2 (Quận 2): Gamuda Land Khởi Động Rổ Hàng F0 Với 800 Căn Hộ Sang Trọng",
+    "summary": "Phân tích chuyên sâu từ Realness.vn: Lễ Kickoff Siêu Dự Án Eaton Park Giai Đoạn 2 (Quận 2): Gamuda Land Khởi Động Rổ Hàng F0 Vớ... Cập nhật dữ liệu mới nhất, bảng so sánh và đánh giá rủi ro cho người mua nhà.",
+    "topic": "project",
+    "topicLabel": "Dự Án",
+    "contentType": "analysis",
+    "status": "review",
+    "workflow_status": "review",
+    "authorId": "project-launch-agent",
+    "authorName": "Project Launch & Sales Pipeline Agent",
+    "reviewerId": null,
+    "reviewedBy": null,
+    "reviewNote": null,
+    "reviewedAt": null,
+    "submittedAt": "2026-10-04T07:17:35.358Z",
+    "publishedAt": null,
+    "modifiedAt": "14:17:35 4/10/2026",
+    "createdAt": "2026-10-04T07:17:35.358Z",
+    "updatedAt": "2026-10-04T07:17:35.358Z",
+    "revision": 1,
+    "sourceName": "Cổng Thông Tin Dự Án Mở Bán & Kickoff",
+    "sourceUrl": "https://batdongsan.com.vn/tin-thi-truong/kickoff-eaton-park-phase-2-gamuda-land-2026",
+    "projectStage": "kickoff",
+    "projectStageLabel": "ĐÃ KICKOFF - LỄ RA QUÂN F0",
+    "developerName": "Gamuda Land (Malaysia)",
+    "locationArea": "Mặt tiền Mai Chí Thọ, Phường An Phú, TP. Thủ Đức",
+    "priceRumorRange": "125 - 145 triệu/m² (Dự kiến Đợt 2)",
+    "bookingPolicy": "Đặt chỗ ưu tiên có hoàn lại 100 triệu/suất, chiết khấu 1-2% ngày mở bán",
+    "expectedLaunchDate": "Quý 4/2026",
+    "isProjectPipelineSpecial": true,
+    "seo": {
+      "metaTitle": "Lễ Kickoff Siêu Dự Án Eaton Park Giai Đoạn 2 (Quận 2) [Phân Tích Dữ Liệu Thực Tế 2026]",
+      "metaDescription": "Phân tích chuyên sâu từ Realness.vn: Lễ Kickoff Siêu Dự Án Eaton Park Giai Đoạn 2 (Quận 2): Gamuda Land Khởi Động Rổ Hàng F0 Vớ... Cập nhật dữ liệu mới nhất, bảng so sánh và đánh giá rủi ro cho người mua nhà.",
+      "keywords": [
+        "dự án mở bán 2026",
+        "realness.vn",
+        "booking căn hộ",
+        "kickoff",
+        "Gamuda Land (Malaysia)"
+      ],
+      "readingTime": "1 phút đọc",
+      "seoScore": 99,
+      "schemaType": "Article,FAQPage",
+      "cleanImagesCount": 2
+    },
+    "images": [
+      {
+        "originalUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "cleanUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "aspectRatio": "16:9",
+        "alt": "Lễ Kickoff Siêu Dự Án Eaton Park Giai Đoạn 2 (Quận 2): Gamuda Land Khởi Động Rổ Hàng F0 Với 800 Căn Hộ Sang Trọng - Hình 1 (Dữ liệu kiểm chứng Realness.vn)",
+        "caption": "Ảnh phân tích thực tế: Lễ Kickoff Siêu Dự Án Eaton Park Giai Đoạn 2 (Quận 2): Gamuda Land Khởi Động Rổ Hàng F0 Với 800 Căn Hộ Sang Trọng. Bản quyền tư liệu số đã được làm sạch và chuẩn hóa bởi Realness Studio.",
+        "sanitized": true,
+        "metadataStripped": [
+          "EXIF_CameraModel",
+          "EXIF_GPSCoords",
+          "XMP_CopyrightNotice",
+          "DigitalWatermark_Removed"
+        ],
+        "dimensions": {
+          "width": 1200,
+          "height": 675
+        }
+      },
+      {
+        "originalUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+        "cleanUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+        "aspectRatio": "16:9",
+        "alt": "Lễ Kickoff Siêu Dự Án Eaton Park Giai Đoạn 2 (Quận 2): Gamuda Land Khởi Động Rổ Hàng F0 Với 800 Căn Hộ Sang Trọng - Hình 2 (Dữ liệu kiểm chứng Realness.vn)",
+        "caption": "Ảnh phân tích thực tế: Lễ Kickoff Siêu Dự Án Eaton Park Giai Đoạn 2 (Quận 2): Gamuda Land Khởi Động Rổ Hàng F0 Với 800 Căn Hộ Sang Trọng. Bản quyền tư liệu số đã được làm sạch và chuẩn hóa bởi Realness Studio.",
+        "sanitized": true,
+        "metadataStripped": [
+          "EXIF_CameraModel",
+          "EXIF_GPSCoords",
+          "XMP_CopyrightNotice",
+          "DigitalWatermark_Removed"
+        ],
+        "dimensions": {
+          "width": 1200,
+          "height": 675
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "id": "h-intro-le-kickoff-sieu-du-an-eaton-park-giai-doan-2-quan-2-gamuda-land-khoi-dong-ro-hang-f0-voi-800-can-ho-",
+        "type": "heading",
+        "title": "1. Bối cảnh dự án & Thông tin mở bán mới nhất từ Chủ đầu tư"
+      },
+      {
+        "id": "p-intro-le-kickoff-sieu-du-an-eaton-park-giai-doan-2-quan-2-gamuda-land-khoi-dong-ro-hang-f0-voi-800-can-ho-",
+        "type": "paragraph",
+        "body": "Trong bức tranh phục hồi của thị trường bất động sản năm 2026, các dự án ở giai đoạn ĐÃ KICKOFF - LỄ RA QUÂN F0 luôn thu hút sự quan tâm lớn nhất từ người mua ở thực và nhà đầu tư. Báo cáo độc lập dưới đây được Nhánh Chuyên Gia Dự Án Realness tổng hợp và kiểm chứng trực tiếp, cam kết dữ liệu 3 Không: Không báo ảo - Không cài cắm giá - Không che giấu pháp lý."
+      },
+      {
+        "id": "img-primary-le-kickoff-sieu-du-an-eaton-park-giai-doan-2-quan-2-gamuda-land-khoi-dong-ro-hang-f0-voi-800-can-ho-",
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Lễ Kickoff Siêu Dự Án Eaton Park Giai Đoạn 2 (Quận 2): Gamuda Land Khởi Động Rổ Hàng F0 Với 800 Căn Hộ Sang Trọng - Hình 1 (Dữ liệu kiểm chứng Realness.vn)",
+        "caption": "Ảnh phân tích thực tế: Lễ Kickoff Siêu Dự Án Eaton Park Giai Đoạn 2 (Quận 2): Gamuda Land Khởi Động Rổ Hàng F0 Với 800 Căn Hộ Sang Trọng. Bản quyền tư liệu số đã được làm sạch và chuẩn hóa bởi Realness Studio."
+      },
+      {
+        "id": "h-details-le-kickoff-sieu-du-an-eaton-park-giai-doan-2-quan-2-gamuda-land-khoi-dong-ro-hang-f0-voi-800-can-ho-",
+        "type": "heading",
+        "title": "2. Phân tích chi tiết rổ hàng, bảng giá rumor & tiến độ thực tế"
+      },
+      {
+        "id": "p-details-le-kickoff-sieu-du-an-eaton-park-giai-doan-2-quan-2-gamuda-land-khoi-dong-ro-hang-f0-voi-800-can-ho-",
+        "type": "paragraph",
+        "body": "Lễ ra quân (Kickoff) Eaton Park Giai đoạn 2 đã chính thức diễn ra với sự góp mặt của hơn 2.500 chuyên viên kinh doanh chiến lược từ các đại lý phân phối F1 hàng đầu. Gamuda Land công bố lộ trình ra hàng đợt 2 với khoảng 800 căn hộ cao cấp thuộc các tòa tháp đẹp nhất dự án, trực diện kênh đào và tầm nhìn về trung tâm Quận 1. Mức giá rumor dự kiến từ 125 - 145 triệu/m². Chủ đầu tư áp dụng chính sách nhận đặt chỗ ưu tiên 100 triệu/suất (có hoàn lại 100% nếu không chọn được căn). Cú hích hạ tầng từ nút giao An Phú 3 tầng dự kiến thông xe cuối năm 2026 đang tạo đà thanh khoản mạnh mẽ cho toàn phân khu."
+      },
+      {
+        "id": "table-comparison-le-kickoff-sieu-du-an-eaton-park-giai-doan-2-quan-2-gamuda-land-khoi-dong-ro-hang-f0-voi-800-can-ho-",
+        "type": "table",
+        "title": "Hồ sơ giỏ hàng & Điều kiện mở bán: Gamuda Land (Malaysia) (Đã xác thực)",
+        "rows": [
+          [
+            "Thông Số Đánh Giá",
+            "Dữ Liệu Thực Tế",
+            "Góc Nhìn Thẩm Định Realness"
+          ],
+          [
+            "Giai Đoạn Dự Án",
+            "ĐÃ KICKOFF - LỄ RA QUÂN F0",
+            "Ưu tiên rà soát pháp lý móng hầm"
+          ],
+          [
+            "Chủ Đầu Tư",
+            "Gamuda Land (Malaysia)",
+            "Kiểm tra năng lực triển khai thực tế"
+          ],
+          [
+            "Giá Bán / Rumor",
+            "125 - 145 triệu/m² (Dự kiến Đợt 2)",
+            "Đối chiếu với mặt bằng thứ cấp khu vực"
+          ],
+          [
+            "Chính Sách Booking / Bán Hàng",
+            "Đặt chỗ ưu tiên có hoàn lại 100 triệu/suất, chiết khấu 1-2% ngày mở bán",
+            "Quy định cọc không quá 5% theo Luật 2024"
+          ],
+          [
+            "Mốc Thời Gian Dự Kiến",
+            "Quý 4/2026",
+            "Theo dõi tiến độ nghiệm thu thực tế"
+          ]
+        ]
+      },
+      {
+        "id": "h-realness-insight-le-kickoff-sieu-du-an-eaton-park-giai-doan-2-quan-2-gamuda-land-khoi-dong-ro-hang-f0-voi-800-can-ho-",
+        "type": "heading",
+        "title": "3. Góc nhìn chuyên gia giỏ hàng Realness (Đánh giá chọn căn & Lời khuyên an toàn)"
+      },
+      {
+        "id": "p-realness-insight-le-kickoff-sieu-du-an-eaton-park-giai-doan-2-quan-2-gamuda-land-khoi-dong-ro-hang-f0-voi-800-can-ho-",
+        "type": "paragraph",
+        "body": "Đội ngũ Phân tích Giỏ Hàng Realness khuyến cáo: (1) Chỉ tham gia đặt chỗ giữ quyền chọn căn (booking) khi có văn bản thỏa thuận hoàn lại 100% rõ ràng, (2) Đối chiếu giá rumor đợt 1 với các dự án đã bàn giao lân cận để xác định biên độ an toàn, và (3) Tuyệt đối tuân thủ quy tắc cọc không vượt quá 5% giá trị căn hộ theo quy định tại Luật Nhà ở & Luật Kinh doanh BĐS 2024."
+      },
+      {
+        "id": "h-faq-le-kickoff-sieu-du-an-eaton-park-giai-doan-2-quan-2-gamuda-land-khoi-dong-ro-hang-f0-voi-800-can-ho-",
+        "type": "heading",
+        "title": "4. Các câu hỏi thường gặp (FAQ) & Giải đáp nhanh"
+      },
+      {
+        "id": "faq-01-le-kickoff-sieu-du-an-eaton-park-giai-doan-2-quan-2-gamuda-land-khoi-dong-ro-hang-f0-voi-800-can-ho-",
+        "type": "faq",
+        "question": "Làm sao để biết suất booking (đặt chỗ) của dự án này có được hoàn lại tiền hay không?",
+        "answer": "Toàn bộ các dự án xuất hiện trên Realness đều áp dụng chính sách 'Booking có hoàn lại' (Refundable). Khách hàng có quyền rút lại 100% tiền giữ chỗ trong vòng 7 - 14 ngày làm việc nếu ngày mở bán không chọn được căn ưng ý."
+      },
+      {
+        "id": "faq-02-le-kickoff-sieu-du-an-eaton-park-giai-doan-2-quan-2-gamuda-land-khoi-dong-ro-hang-f0-voi-800-can-ho-",
+        "type": "faq",
+        "question": "Người mua nhà giai đoạn F0 cần chuẩn bị dòng tiền như thế nào?",
+        "answer": "Nên chuẩn bị sẵn sàng 15 - 20% vốn tự có để ký Hợp đồng mua bán. Phần còn lại có thể sử dụng gói thanh toán giãn 1%/tháng hoặc gói ân hạn nợ gốc từ ngân hàng đối tác của chủ đầu tư."
+      }
+    ]
+  },
+  {
     "id": "agent-article-df52f50d",
     "slug": "ban-do-bien-dong-gia-chung-cu-ven-song-tphcm-2024-2026-phan-khuc-nao-giu-thanh-khoan-tot-nhat-khi-th",
     "legacySlugs": [],
