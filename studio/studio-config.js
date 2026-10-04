@@ -1,3 +1,3 @@
 window.REALNESS_STUDIO_API = "https://realness-studio-api-production.khaiphong-academy.workers.dev";
 window.REALNESS_STUDIO_SITE = "realness.vn";
-window.REALNESS_STUDIO_RELEASE = {"version":"2.6.2","build":"r02-20261004065857","builtAt":"2026-10-04T06:58:57.411Z","environment":"PRODUCTION"};
+window.REALNESS_STUDIO_RELEASE = {"version":"2.6.2","build":"r02-20261004071221","builtAt":"2026-10-04T07:12:21.385Z","environment":"PRODUCTION"};
