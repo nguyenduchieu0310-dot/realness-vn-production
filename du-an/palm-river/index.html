@@ -12,51 +12,20 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Inter:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
-    <style>body{color:#222;background-color:#faf8f5;margin:0;font-family:Roboto,Inter,Arial,Helvetica,sans-serif}@keyframes spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}</style>
+    <style>body{color:#222;-webkit-font-smoothing:antialiased;background-color:#faf8f5;margin:0;font-family:Roboto,Inter,Arial,Helvetica,sans-serif}#site-loader-bar{z-index:99999;background:linear-gradient(90deg,#c5a880,#f3e7cb,#c5a880) 0 0/200% 100%;width:100%;height:2.5px;animation:1.5s linear infinite siteLoaderShimmer;position:fixed;top:0;left:0}@keyframes siteLoaderShimmer{0%{background-position:200% 0}to{background-position:-200% 0}}</style>
     <script>
-      // 1. Safe fallback for React Refresh preamble in dev mode
       window.$RefreshReg$ = window.$RefreshReg$ || function() {};
       window.$RefreshSig$ = window.$RefreshSig$ || function() { return function(type) { return type; }; };
 
-      // 2. Unregister any stale service workers that could intercept localhost
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.getRegistrations().then(function(regs) {
           for (var reg of regs) { reg.unregister(); }
         }).catch(function() {});
       }
-
-      // 3. Catch critical uncaught boot errors
-      window.addEventListener('error', function(e) {
-        console.error('[Realness Boot Error]', e);
-        var loader = document.getElementById('boot-loader');
-        if (loader) {
-          loader.innerHTML = '<div style="max-width:560px;background:#0f172a;border:1px solid #ef4444;border-radius:12px;padding:24px;text-align:left;box-shadow:0 10px 30px rgba(0,0,0,0.5);">' +
-            '<h3 style="color:#ef4444;margin:0 0 10px 0;">⚠️ Sự cố tải trang (Boot Error)</h3>' +
-            '<p style="color:#cbd5e1;font-size:13px;line-height:1.5;margin:0 0 12px 0;">' + (e.message || 'Lỗi không xác định khi tải module script.') + '</p>' +
-            '<pre style="background:#020617;color:#f87171;padding:10px;border-radius:6px;font-size:11px;overflow-x:auto;">' + (e.filename ? e.filename + ':' + e.lineno : 'Module Load Exception') + '</pre>' +
-            '<div style="display:flex;gap:10px;margin-top:16px;">' +
-            '<button onclick="location.reload(true)" style="background:#10b981;color:#000;border:none;padding:8px 16px;border-radius:6px;font-weight:bold;cursor:pointer;">Tải lại trang (F5)</button>' +
-            '<button onclick="localStorage.clear();sessionStorage.clear();location.reload(true)" style="background:#334155;color:#fff;border:none;padding:8px 16px;border-radius:6px;cursor:pointer;">Xóa Cache & Tải lại</button>' +
-            '</div></div>';
-        }
-      });
-
-      window.addEventListener('unhandledrejection', function(e) {
-        console.error('[Realness Promise Rejection]', e);
-      });
-
-      // Watchdog: Nếu sau 2.5s chưa mount, hiện nút reload nhanh
-      setTimeout(function() {
-        var loader = document.getElementById('boot-loader');
-        if (loader) {
-          var tip = document.getElementById('boot-tip');
-          if (tip) tip.style.display = 'block';
-        }
-      }, 2500);
     </script>
-  <script type="module" crossorigin src="/assets/index-CHrianCk.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-c0wgrZCT.css">
-
+    <script type="module" crossorigin src="/assets/index-BR4pFOZd.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-c0wgrZCT.css">
+  </head>
   
     <title>Palm River - Haute Living Palm City Nam Rạch Chiếc | Bảng Giá & Giỏ Hàng Realness</title>
     <meta name="description" content="Palm River (Palm City Nam Rạch Chiếc, TP. Thủ Đức) - 4 tháp căn hộ resort ven sông Giồng Ông Tố, đặc quyền Tầng 20 Sky Wellness, 100% view sông, 80% căn góc. Bảng giá rumor 130-150 tr/m2, thanh toán 10% nhận nhà, dữ liệu thực chứng độc quyền Realness." />
@@ -115,25 +84,34 @@
     </script>
     
   <body>
+    <div id="site-loader-bar"></div>
     <div id="root">
-      <div id="boot-loader" style="min-height: 100vh; background-color: #090d16; color: #f1f5f9; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px;">
-        <div style="width: 36px; height: 36px; border: 3px solid #1e293b; border-top-color: #10b981; border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 16px;"></div>
-        <div style="font-size: 14px; color: #94a3b8; font-weight: 500;">Đang tải dữ liệu Realness...</div>
-        <div id="boot-tip" style="display:none; margin-top: 16px; text-align: center;">
-          <p style="color: #94a3b8; font-size: 13px; margin: 0 0 10px 0;">Nếu trang chưa vào được do bộ nhớ đệm cũ:</p>
-          <button onclick="location.reload(true)" style="background:#10b981; color:#0f172a; font-weight:700; border:none; padding:8px 18px; border-radius:6px; cursor:pointer; font-size:13px;">Tải lại trang (F5)</button>
+      <header class="site-header" style="position: sticky; top: 0; z-index: 50; background: rgba(250, 248, 245, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0, 0, 0, 0.06); font-family: Roboto, Inter, sans-serif;">
+        <div class="container site-header__inner" style="max-width: 1240px; margin: 0 auto; padding: 0 20px; height: 72px; display: flex; align-items: center; justify-content: space-between;">
+          <a class="wordmark" href="/" aria-label="Trang chủ Realness" style="font-size: 22px; font-weight: 900; letter-spacing: 1.5px; color: #171412; text-decoration: none;">
+            REALNESS
+          </a>
+          <nav class="desktop-nav" aria-label="Điều hướng chính" style="display: flex; gap: 32px;">
+            <a href="/du-an/" style="color: #4b5563; font-weight: 500; font-size: 14.5px; text-decoration: none;">Dự án</a>
+            <a href="/phan-tich/" style="color: #4b5563; font-weight: 500; font-size: 14.5px; text-decoration: none;">Phân tích</a>
+            <a href="/cong-cu/kha-nang-chi-tra/" style="color: #4b5563; font-weight: 500; font-size: 14.5px; text-decoration: none;">Công cụ</a>
+            <a href="/phuong-phap/" style="color: #4b5563; font-weight: 500; font-size: 14.5px; text-decoration: none;">Phương pháp</a>
+          </nav>
+          <div class="site-header__actions" style="display: flex; align-items: center; gap: 12px;">
+            <a href="/?advisor=open" class="button button--secondary" style="padding: 10px 20px; border-radius: 999px; background: #171412; color: #fff; font-size: 13.5px; font-weight: 600; text-decoration: none;">Nhận tư vấn</a>
+          </div>
         </div>
-      </div>
+      </header>
     </div>
     <noscript>
-      <main>
+      <main style="padding: 40px 20px; text-align: center; font-family: Roboto, Inter, sans-serif;">
         <h1>Realness</h1>
-        <p>Bản preview cần JavaScript để chạy trải nghiệm tương tác. Nội dung DEMO không phải thông tin chào bán.</p>
-        <nav>
+        <p>Vui lòng bật JavaScript để trải nghiệm đầy đủ các tính năng dữ liệu và phân tích dự án.</p>
+        <nav style="display: flex; gap: 16px; justify-content: center; margin-top: 20px;">
           <a href="/">Trang chủ</a>
           <a href="/du-an/">Dự án</a>
+          <a href="/phan-tich/">Phân tích</a>
           <a href="/phuong-phap/">Phương pháp</a>
-          <a href="/du-an/demo-residence-a/can-ho/DEMO-A-1201/">Hồ sơ căn DEMO-A-1201</a>
         </nav>
       </main>
     </noscript>
