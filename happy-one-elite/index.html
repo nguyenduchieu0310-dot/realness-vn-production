@@ -480,26 +480,9 @@ img, figure, .wp-caption {
 
 /* Mobile Viewports (<= 549px): Fix table contrast, form edges, typography, and sticky CTA placement */
 @media (max-width: 549px) {
-  /* Critical contrast fix: Flatsome mobile CSS sets table { background-color: #fff; margin-left: -15px; width: calc(100% + 30px) }
-     which turns #text-1840770822 (white text inside dark green .fix-bg3 card) white-on-white! */
-  #text-1840770822 table {
-    background-color: transparent !important;
-    margin-left: 0 !important;
-    width: 100% !important;
-    box-shadow: none !important;
-  }
-  #text-1840770822 table td {
-    color: #ffffff !important;
-    padding: 8px 6px !important;
-    vertical-align: top;
-    font-size: 0.95rem;
-    line-height: 1.45;
-  }
-  #text-1840770822 table td:first-child {
-    width: 36% !important;
-  }
-  #text-1840770822 table td:last-child {
-    width: 64% !important;
+  /* Connection list (#text-1840770822) inside dark green .fix-bg3 card */
+  #row-22269238 > #col-299997760 > .col-inner {
+    padding: 16px 10px !important;
   }
 
   /* Keep Pricing table (#row-1420307742 table) 100% aligned inside its column without -15px bleed */
@@ -643,7 +626,6 @@ img, figure, .wp-caption {
 <li id="menu-item-254" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-254 menu-item-design-default"><a href="#thanhtoan" class="nav-top-link">Thanh toán</a></li>
 <li id="menu-item-256" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256 menu-item-design-default"><a href="#tiendo" class="nav-top-link">Tiến độ</a></li>
 <li id="menu-item-258" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-258 menu-item-design-default"><a href="#lienhe" class="nav-top-link">Liên hệ</a></li>
-<li id="menu-item-260" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-260 menu-item-design-default"><a href="https://happy-oneelite.com/tin-tuc/" class="nav-top-link">Tin tức</a></li>
             </ul>
           </div>
 
@@ -1187,45 +1169,22 @@ img, figure, .wp-caption {
 </div>
 <div class="row row-collapse align-center fix-bg3" style="max-width:1300px" id="row-22269238">
 
-	<div id="col-299997760" class="col medium-4 small-12 large-4"  >
+	<div id="col-299997760" class="col medium-5 small-12 large-5"  >
 				<div class="col-inner text-center"  >
 			
 			
 	<div id="text-1840770822" class="text">
 		
-<h3>KẾT NỐI NHANH CHÓNG TỚI</h3>
-<table style="height: 224px;" width="809">
-<tbody>
-<tr>
-<th style="text-align: left;">AEON Mall, Vincom Plaza, LotteMart</th>
-<td style="text-align: left;">3p</td>
-</tr>
-<tr>
-<th style="text-align: left;">Hoàn Hảo, bệnh viện QT Becamex</th>
-<td>5p</td>
-</tr>
-<tr>
-<th style="text-align: left;">Trung tâm thành phố Thuận An</th>
-<td>5p</td>
-</tr>
-<tr>
-<th style="text-align: left;">KCN công nghệ cao Bình Dương</th>
-<td>10p</td>
-</tr>
-<tr>
-<th style="text-align: left;">Hệ thống trường học các cấp</th>
-<td>15p</td>
-</tr>
-<tr>
-<th style="text-align: left;">Làng Đại học, bến xe Miền Đông mới</th>
-<td>20p</td>
-</tr>
-<tr>
-<th style="text-align: left;">Sân bay quốc tế Tân Sơn Nhất</th>
-<td>10p</td>
-</tr>
-</tbody>
-</table>
+<h3 class="ket-noi-heading">KẾT NỐI NHANH CHÓNG TỚI :</h3>
+<ul class="ket-noi-single-line-list">
+  <li><span class="ket-noi-place">° AEON Mall, Vincom Plaza, LotteMart</span><span class="ket-noi-time">3p</span></li>
+  <li><span class="ket-noi-place">° Bệnh viện Hoàn Mỹ Thủ Đức, Bệnh viện Quốc tế Becamex</span><span class="ket-noi-time">5p</span></li>
+  <li><span class="ket-noi-place">° Trung tâm thành phố Thuận An</span><span class="ket-noi-time">5p</span></li>
+  <li><span class="ket-noi-place">° KCN công nghệ cao Bình Dương</span><span class="ket-noi-time">10p</span></li>
+  <li><span class="ket-noi-place">° Hệ thống trường học các cấp</span><span class="ket-noi-time">15p</span></li>
+  <li><span class="ket-noi-place">° Làng Đại học, bến xe Miền Đông mới</span><span class="ket-noi-time">20p</span></li>
+  <li><span class="ket-noi-place">° Sân bay quốc tế Tân Sơn Nhất</span><span class="ket-noi-time">10p</span></li>
+</ul>
 		
 <style>
 #text-1840770822 {
@@ -1233,6 +1192,56 @@ img, figure, .wp-caption {
 }
 #text-1840770822 > * {
   color: rgb(255,255,255);
+}
+.ket-noi-heading {
+  font-size: 1.2rem !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  margin-bottom: 12px !important;
+  text-align: center;
+  letter-spacing: 0.4px;
+}
+.ket-noi-single-line-list {
+  list-style: none !important;
+  margin: 0 0 16px 0 !important;
+  padding: 0 !important;
+  width: 100%;
+}
+.ket-noi-single-line-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 10px;
+  margin: 0 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff !important;
+  white-space: nowrap;
+}
+.ket-noi-single-line-list li .ket-noi-place {
+  text-align: left;
+  font-weight: 600;
+  font-size: clamp(11px, 1vw, 14.5px);
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ket-noi-single-line-list li .ket-noi-time {
+  font-weight: 700;
+  font-size: clamp(12px, 1.05vw, 15px);
+  color: #ffffff;
+  flex-shrink: 0;
+  white-space: nowrap;
+  padding-left: 6px;
+}
+@media (max-width: 849px) {
+  .ket-noi-single-line-list li .ket-noi-place {
+    font-size: clamp(11px, 3.05vw, 14.5px);
+  }
+  .ket-noi-single-line-list li .ket-noi-time {
+    font-size: clamp(12px, 3.2vw, 15px);
+  }
 }
 </style>
 	</div>
@@ -1245,14 +1254,14 @@ img, figure, .wp-caption {
 				
 <style>
 #col-299997760 > .col-inner {
-  padding: 10px 6px 10px 6px;
+  padding: 14px 12px 14px 12px;
 }
 </style>
 	</div>
 
 	
 
-	<div id="col-2109269910" class="col medium-8 small-12 large-8"  >
+	<div id="col-2109269910" class="col medium-7 small-12 large-7"  >
 				<div class="col-inner"  >
 			
 			
@@ -1586,234 +1595,6 @@ img, figure, .wp-caption {
 			
 			
 <figure id="attachment_883-2" aria-describedby="caption-attachment-883-2" style="width: 1440px" class="wp-caption aligncenter"><img loading="lazy" decoding="async" class="wp-image-883 size-full" src="https://happy-oneelite.com/wp-content/uploads/2026/03/Tien-ich-du-an-happy-one-2.jpg" alt="Tiện ích dự án happy one elite" width="1440" height="800" srcset="https://happy-oneelite.com/wp-content/uploads/2026/03/Tien-ich-du-an-happy-one-2.jpg 1440w, https://happy-oneelite.com/wp-content/uploads/2026/03/Tien-ich-du-an-happy-one-2-300x167.jpg 300w, https://happy-oneelite.com/wp-content/uploads/2026/03/Tien-ich-du-an-happy-one-2-1024x569.jpg 1024w, https://happy-oneelite.com/wp-content/uploads/2026/03/Tien-ich-du-an-happy-one-2-768x427.jpg 768w" sizes="auto, (max-width: 1440px) 100vw, 1440px" /><figcaption id="caption-attachment-883-2" class="wp-caption-text">Tiện ích dự án happy one elite</figcaption></figure>
-	<div id="text-3849973886" class="text">
-		
-<h2 class="title22" style="text-align: center;"><span style="color: #283891;">TIN TỨC DỰ ÁN</span></h2>
-<p style="text-align: center;"><em>Cập nhật tin tức dự án mới nhất</em></p>
-		
-<style>
-#text-3849973886 {
-  color: rgb(0,0,0);
-}
-#text-3849973886 > * {
-  color: rgb(0,0,0);
-}
-</style>
-	</div>
-	
-
-  
-    <div class="row fix-tintuc large-columns-2 medium-columns-1 small-columns-1 slider row-slider slider-nav-circle slider-nav-outside slider-nav-push"  data-flickity-options='{&quot;imagesLoaded&quot;: true, &quot;groupCells&quot;: &quot;100%&quot;, &quot;dragThreshold&quot; : 5, &quot;cellAlign&quot;: &quot;left&quot;,&quot;wrapAround&quot;: true,&quot;prevNextButtons&quot;: true,&quot;percentPosition&quot;: true,&quot;pageDots&quot;: false, &quot;rightToLeft&quot;: false, &quot;autoPlay&quot; : false}' >
-
-  <div class="col post-item" >
-			<div class="col-inner">
-				<div class="box box-normal box-text-bottom box-blog-post has-hover">
-            					<div class="box-image" >
-  						<div class="image-cover" style="padding-top:56.25%;">
-							<a href="https://happy-oneelite.com/cac-doi-tac-chien-luoc-du-an-happy-one-elite-tam-binh/" class="plain" aria-label="Các Đối Tác Chiến Lược Dự Án Happy One Elite Tam Bình">
-								<img loading="lazy" decoding="async" width="173" height="300" src="https://happy-oneelite.com/wp-content/uploads/2026/10/doi-tac-chien-luoc-173x300.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://happy-oneelite.com/wp-content/uploads/2026/10/doi-tac-chien-luoc-173x300.jpg 173w, https://happy-oneelite.com/wp-content/uploads/2026/10/doi-tac-chien-luoc-590x1024.jpg 590w, https://happy-oneelite.com/wp-content/uploads/2026/10/doi-tac-chien-luoc-768x1333.jpg 768w, https://happy-oneelite.com/wp-content/uploads/2026/10/doi-tac-chien-luoc-885x1536.jpg 885w, https://happy-oneelite.com/wp-content/uploads/2026/10/doi-tac-chien-luoc.jpg 940w" sizes="auto, (max-width: 173px) 100vw, 173px" />							</a>
-  							  							  						</div>
-  						  					</div>
-          					<div class="box-text text-left" style="padding:0px 10px 5px 10px;">
-					<div class="box-text-inner blog-post-inner">
-
-					
-										<h5 class="post-title is-large ">
-						<a href="https://happy-oneelite.com/cac-doi-tac-chien-luoc-du-an-happy-one-elite-tam-binh/" class="plain">Các Đối Tác Chiến Lược Dự Án Happy One Elite Tam Bình</a>
-					</h5>
-										<div class="is-divider"></div>
-										<p class="from_the_blog_excerpt ">
-						Trong bối cảnh thị trường bất động sản ngày càng cạnh tranh và đòi hỏi sự minh bạch, chất lượng, một dự án muốn [...]					</p>
-					                    
-					
-					
-					</div>
-					</div>
-									</div>
-			</div>
-		</div><div class="col post-item" >
-			<div class="col-inner">
-				<div class="box box-normal box-text-bottom box-blog-post has-hover">
-            					<div class="box-image" >
-  						<div class="image-cover" style="padding-top:56.25%;">
-							<a href="https://happy-oneelite.com/happy-one-elite-khoi-cong-ngay-15-10-2026-ep-coc-thu/" class="plain" aria-label="HAPPY ONE ELITE KHỞI CÔNG NGÀY 15/10/2026 ÉP CỌC THỬ">
-								<img loading="lazy" decoding="async" width="300" height="212" src="https://happy-oneelite.com/wp-content/uploads/2026/10/Khoi-cong-ep-coc-thu-du-an-happy-one-elite-1-300x212.jpg" class="attachment-medium size-medium wp-post-image" alt="Khởi công ép cọc thử dự án happy one elite 1" srcset="https://happy-oneelite.com/wp-content/uploads/2026/10/Khoi-cong-ep-coc-thu-du-an-happy-one-elite-1-300x212.jpg 300w, https://happy-oneelite.com/wp-content/uploads/2026/10/Khoi-cong-ep-coc-thu-du-an-happy-one-elite-1-1024x724.jpg 1024w, https://happy-oneelite.com/wp-content/uploads/2026/10/Khoi-cong-ep-coc-thu-du-an-happy-one-elite-1-768x543.jpg 768w, https://happy-oneelite.com/wp-content/uploads/2026/10/Khoi-cong-ep-coc-thu-du-an-happy-one-elite-1.jpg 1521w" sizes="auto, (max-width: 300px) 100vw, 300px" />							</a>
-  							  							  						</div>
-  						  					</div>
-          					<div class="box-text text-left" style="padding:0px 10px 5px 10px;">
-					<div class="box-text-inner blog-post-inner">
-
-					
-										<h5 class="post-title is-large ">
-						<a href="https://happy-oneelite.com/happy-one-elite-khoi-cong-ngay-15-10-2026-ep-coc-thu/" class="plain">HAPPY ONE ELITE KHỞI CÔNG NGÀY 15/10/2026 ÉP CỌC THỬ</a>
-					</h5>
-										<div class="is-divider"></div>
-										<p class="from_the_blog_excerpt ">
-						Happy One Elite – dự án căn hộ tại khu vực Tam Bình, TP. Thủ Đức – thu hút sự quan tâm của thị [...]					</p>
-					                    
-					
-					
-					</div>
-					</div>
-									</div>
-			</div>
-		</div><div class="col post-item" >
-			<div class="col-inner">
-				<div class="box box-normal box-text-bottom box-blog-post has-hover">
-            					<div class="box-image" >
-  						<div class="image-cover" style="padding-top:56.25%;">
-							<a href="https://happy-oneelite.com/ho-boi-day-kinh-trong-suot-tai-can-ho-happy-one-elite/" class="plain" aria-label="Hồ bơi đáy kính trong suốt tại căn hộ Happy One Elite">
-								<img loading="lazy" decoding="async" width="300" height="200" src="https://happy-oneelite.com/wp-content/uploads/2026/09/Ho-boi-day-kinh-trong-suot-tai-du-an-happy-one-elite-300x200.jpg" class="attachment-medium size-medium wp-post-image" alt="Hồ bơi đáy kính trong suốt tại dự án happy one elite" srcset="https://happy-oneelite.com/wp-content/uploads/2026/09/Ho-boi-day-kinh-trong-suot-tai-du-an-happy-one-elite-300x200.jpg 300w, https://happy-oneelite.com/wp-content/uploads/2026/09/Ho-boi-day-kinh-trong-suot-tai-du-an-happy-one-elite-1024x683.jpg 1024w, https://happy-oneelite.com/wp-content/uploads/2026/09/Ho-boi-day-kinh-trong-suot-tai-du-an-happy-one-elite-768x512.jpg 768w, https://happy-oneelite.com/wp-content/uploads/2026/09/Ho-boi-day-kinh-trong-suot-tai-du-an-happy-one-elite.jpg 1536w" sizes="auto, (max-width: 300px) 100vw, 300px" />							</a>
-  							  							  						</div>
-  						  					</div>
-          					<div class="box-text text-left" style="padding:0px 10px 5px 10px;">
-					<div class="box-text-inner blog-post-inner">
-
-					
-										<h5 class="post-title is-large ">
-						<a href="https://happy-oneelite.com/ho-boi-day-kinh-trong-suot-tai-can-ho-happy-one-elite/" class="plain">Hồ bơi đáy kính trong suốt tại căn hộ Happy One Elite</a>
-					</h5>
-										<div class="is-divider"></div>
-										<p class="from_the_blog_excerpt ">
-						Happy One Elite gây chú ý với hệ thống tiện ích được định hướng theo phong cách sống hiện đại, trong đó hồ bơi [...]					</p>
-					                    
-					
-					
-					</div>
-					</div>
-									</div>
-			</div>
-		</div><div class="col post-item" >
-			<div class="col-inner">
-				<div class="box box-normal box-text-bottom box-blog-post has-hover">
-            					<div class="box-image" >
-  						<div class="image-cover" style="padding-top:56.25%;">
-							<a href="https://happy-oneelite.com/tien-ich-du-an-happy-one-elite-tai-thu-duc/" class="plain" aria-label="Tiện ích dự án Happy One Elite Tại Thủ Đức">
-								<img loading="lazy" decoding="async" width="300" height="169" src="https://happy-oneelite.com/wp-content/uploads/2026/09/Tien-ich-tai-can-ho-happy-one-elite-300x169.jpg" class="attachment-medium size-medium wp-post-image" alt="Tiện ích tại căn hộ happy one elite" srcset="https://happy-oneelite.com/wp-content/uploads/2026/09/Tien-ich-tai-can-ho-happy-one-elite-300x169.jpg 300w, https://happy-oneelite.com/wp-content/uploads/2026/09/Tien-ich-tai-can-ho-happy-one-elite-1024x576.jpg 1024w, https://happy-oneelite.com/wp-content/uploads/2026/09/Tien-ich-tai-can-ho-happy-one-elite-768x432.jpg 768w, https://happy-oneelite.com/wp-content/uploads/2026/09/Tien-ich-tai-can-ho-happy-one-elite-1536x864.jpg 1536w, https://happy-oneelite.com/wp-content/uploads/2026/09/Tien-ich-tai-can-ho-happy-one-elite.jpg 1672w" sizes="auto, (max-width: 300px) 100vw, 300px" />							</a>
-  							  							  						</div>
-  						  					</div>
-          					<div class="box-text text-left" style="padding:0px 10px 5px 10px;">
-					<div class="box-text-inner blog-post-inner">
-
-					
-										<h5 class="post-title is-large ">
-						<a href="https://happy-oneelite.com/tien-ich-du-an-happy-one-elite-tai-thu-duc/" class="plain">Tiện ích dự án Happy One Elite Tại Thủ Đức</a>
-					</h5>
-										<div class="is-divider"></div>
-										<p class="from_the_blog_excerpt ">
-						Tiện ích Happy One Elite được định hướng phát triển hệ thống tiện ích ngay trong nội khu, phục vụ những nhu cầu quen [...]					</p>
-					                    
-					
-					
-					</div>
-					</div>
-									</div>
-			</div>
-		</div><div class="col post-item" >
-			<div class="col-inner">
-				<div class="box box-normal box-text-bottom box-blog-post has-hover">
-            					<div class="box-image" >
-  						<div class="image-cover" style="padding-top:56.25%;">
-							<a href="https://happy-oneelite.com/happy-one-elite-cau-noi-giua-cac-trung-tam-kinh-te-trong-diem/" class="plain" aria-label="Happy One Elite Cầu Nối Giữa Các Trung Tâm Kinh Tế Trọng Điểm">
-								<img loading="lazy" decoding="async" width="300" height="191" src="https://happy-oneelite.com/wp-content/uploads/2026/09/VI-tri-ket-noi-du-an-happy-one-elite-300x191.jpg" class="attachment-medium size-medium wp-post-image" alt="VỊ trí kết nối dự án happy one elite" srcset="https://happy-oneelite.com/wp-content/uploads/2026/09/VI-tri-ket-noi-du-an-happy-one-elite-300x191.jpg 300w, https://happy-oneelite.com/wp-content/uploads/2026/09/VI-tri-ket-noi-du-an-happy-one-elite-1024x651.jpg 1024w, https://happy-oneelite.com/wp-content/uploads/2026/09/VI-tri-ket-noi-du-an-happy-one-elite-768x488.jpg 768w, https://happy-oneelite.com/wp-content/uploads/2026/09/VI-tri-ket-noi-du-an-happy-one-elite-1536x976.jpg 1536w, https://happy-oneelite.com/wp-content/uploads/2026/09/VI-tri-ket-noi-du-an-happy-one-elite.jpg 1573w" sizes="auto, (max-width: 300px) 100vw, 300px" />							</a>
-  							  							  						</div>
-  						  					</div>
-          					<div class="box-text text-left" style="padding:0px 10px 5px 10px;">
-					<div class="box-text-inner blog-post-inner">
-
-					
-										<h5 class="post-title is-large ">
-						<a href="https://happy-oneelite.com/happy-one-elite-cau-noi-giua-cac-trung-tam-kinh-te-trong-diem/" class="plain">Happy One Elite Cầu Nối Giữa Các Trung Tâm Kinh Tế Trọng Điểm</a>
-					</h5>
-										<div class="is-divider"></div>
-										<p class="from_the_blog_excerpt ">
-						Trong nhịp sống hiện đại hối hả, việc tìm kiếm một tổ ấm không chỉ đơn thuần là nơi để ở, mà còn là [...]					</p>
-					                    
-					
-					
-					</div>
-					</div>
-									</div>
-			</div>
-		</div><div class="col post-item" >
-			<div class="col-inner">
-				<div class="box box-normal box-text-bottom box-blog-post has-hover">
-            					<div class="box-image" >
-  						<div class="image-cover" style="padding-top:56.25%;">
-							<a href="https://happy-oneelite.com/happy-one-elite-danh-thuc-nhung-gia-tri-vuot/" class="plain" aria-label="Happy One Elite: Đánh Thức Những Giá Trị Vượt">
-								<img loading="lazy" decoding="async" width="300" height="150" src="https://happy-oneelite.com/wp-content/uploads/2026/09/tien-ich-happy-one-elite-300x150.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://happy-oneelite.com/wp-content/uploads/2026/09/tien-ich-happy-one-elite-300x150.jpg 300w, https://happy-oneelite.com/wp-content/uploads/2026/09/tien-ich-happy-one-elite-1024x512.jpg 1024w, https://happy-oneelite.com/wp-content/uploads/2026/09/tien-ich-happy-one-elite-768x384.jpg 768w, https://happy-oneelite.com/wp-content/uploads/2026/09/tien-ich-happy-one-elite-1536x768.jpg 1536w, https://happy-oneelite.com/wp-content/uploads/2026/09/tien-ich-happy-one-elite.jpg 1920w" sizes="auto, (max-width: 300px) 100vw, 300px" />							</a>
-  							  							  						</div>
-  						  					</div>
-          					<div class="box-text text-left" style="padding:0px 10px 5px 10px;">
-					<div class="box-text-inner blog-post-inner">
-
-					
-										<h5 class="post-title is-large ">
-						<a href="https://happy-oneelite.com/happy-one-elite-danh-thuc-nhung-gia-tri-vuot/" class="plain">Happy One Elite: Đánh Thức Những Giá Trị Vượt</a>
-					</h5>
-										<div class="is-divider"></div>
-										<p class="from_the_blog_excerpt ">
-						Happy One Elite: Đánh Thức Những Giá Trị Vượt Trội Giữa Lòng Đô Thị Trong bối cảnh đô thị hóa mạnh mẽ và nhu [...]					</p>
-					                    
-					
-					
-					</div>
-					</div>
-									</div>
-			</div>
-		</div><div class="col post-item" >
-			<div class="col-inner">
-				<div class="box box-normal box-text-bottom box-blog-post has-hover">
-            					<div class="box-image" >
-  						<div class="image-cover" style="padding-top:56.25%;">
-							<a href="https://happy-oneelite.com/chu-dau-tu-du-an-happy-one-elite/" class="plain" aria-label="Chủ đầu tư dự án Happy One Elite">
-								<img loading="lazy" decoding="async" width="300" height="200" src="https://happy-oneelite.com/wp-content/uploads/2026/09/chu-dau-tu-van-xuan-group-300x200.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://happy-oneelite.com/wp-content/uploads/2026/09/chu-dau-tu-van-xuan-group-300x200.jpg 300w, https://happy-oneelite.com/wp-content/uploads/2026/09/chu-dau-tu-van-xuan-group-768x511.jpg 768w, https://happy-oneelite.com/wp-content/uploads/2026/09/chu-dau-tu-van-xuan-group.jpg 1000w" sizes="auto, (max-width: 300px) 100vw, 300px" />							</a>
-  							  							  						</div>
-  						  					</div>
-          					<div class="box-text text-left" style="padding:0px 10px 5px 10px;">
-					<div class="box-text-inner blog-post-inner">
-
-					
-										<h5 class="post-title is-large ">
-						<a href="https://happy-oneelite.com/chu-dau-tu-du-an-happy-one-elite/" class="plain">Chủ đầu tư dự án Happy One Elite</a>
-					</h5>
-										<div class="is-divider"></div>
-										<p class="from_the_blog_excerpt ">
-						Chủ đầu tư Happy One Elite – Vạn Xuân Group và hành trình phát triển thương hiệu Happy One Happy One Elite là dự [...]					</p>
-					                    
-					
-					
-					</div>
-					</div>
-									</div>
-			</div>
-		</div><div class="col post-item" >
-			<div class="col-inner">
-				<div class="box box-normal box-text-bottom box-blog-post has-hover">
-            					<div class="box-image" >
-  						<div class="image-cover" style="padding-top:56.25%;">
-							<a href="https://happy-oneelite.com/cdt-van-xuan-chinh-thuc-dua-du-an-happy-one-elite-len-cong/" class="plain" aria-label="CDT Vạn Xuân Chính Thức Đưa Dự Án Happy One Elite Lên Cổng">
-								<img loading="lazy" decoding="async" width="300" height="225" src="https://happy-oneelite.com/wp-content/uploads/2026/09/cong-du-an-happy-one-elite-300x225.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://happy-oneelite.com/wp-content/uploads/2026/09/cong-du-an-happy-one-elite-300x225.jpg 300w, https://happy-oneelite.com/wp-content/uploads/2026/09/cong-du-an-happy-one-elite-1024x768.jpg 1024w, https://happy-oneelite.com/wp-content/uploads/2026/09/cong-du-an-happy-one-elite-768x576.jpg 768w, https://happy-oneelite.com/wp-content/uploads/2026/09/cong-du-an-happy-one-elite-1536x1152.jpg 1536w, https://happy-oneelite.com/wp-content/uploads/2026/09/cong-du-an-happy-one-elite-2048x1536.jpg 2048w" sizes="auto, (max-width: 300px) 100vw, 300px" />							</a>
-  							  							  						</div>
-  						  					</div>
-          					<div class="box-text text-left" style="padding:0px 10px 5px 10px;">
-					<div class="box-text-inner blog-post-inner">
-
-					
-										<h5 class="post-title is-large ">
-						<a href="https://happy-oneelite.com/cdt-van-xuan-chinh-thuc-dua-du-an-happy-one-elite-len-cong/" class="plain">CDT Vạn Xuân Chính Thức Đưa Dự Án Happy One Elite Lên Cổng</a>
-					</h5>
-										<div class="is-divider"></div>
-										<p class="from_the_blog_excerpt ">
-						Happy One Elite &#8211; Biểu Tượng Mới Của Sự Phát Triển Đô Thị Trong bối cảnh thị trường bất động sản đang có những [...]					</p>
-					                    
-					
-					
-					</div>
-					</div>
-									</div>
-			</div>
-		</div></div>
 		</div>
 					</div>
 
@@ -1842,11 +1623,8 @@ img, figure, .wp-caption {
 <footer id="footer" class="footer-wrapper">
 
 	
-	<section class="section fix-footer" id="section_1882090468">
+	<section class="section fix-footer fix-bg3" id="section_1882090468">
 		<div class="section-bg fill" >
-			<img width="1125" height="633" src="https://happy-oneelite.com/wp-content/uploads/2025/02/Tien-ich-tai-Fresia-Riverside-Tan-Van-1.png" class="bg attachment-original size-original" alt="Amy Complex" decoding="async" loading="lazy" />						<div class="section-bg-overlay absolute fill"></div>
-			
-
 		</div>
 
 		
@@ -1867,13 +1645,13 @@ img, figure, .wp-caption {
 	<div id="text-858131447" class="text">
 		
 
-<div class="col-inner text-left dark">
-<h3 style="text-align: left; color: #ffffff;"><strong>DỊCH VỤ TƯ VẤN BẤT ĐỘNG SẢN CHUYÊN NGHIỆP – CHIẾN LƯỢC CHỌN CĂN – TỐI ƯU TIỀM NĂNG SINH LỜI</strong></h3>
-<p style="text-align: left; color: #ffffff;">+ Đội ngũ chuyên viên giàu kinh nghiệm, cam kết tư vấn Đúng – Đủ – Chuyên nghiệp – Tận tâm – Minh bạch.</p>
-<p style="text-align: left; color: #ffffff;">+ Giỏ hàng đa dạng, phong phú, thường xuyên có suất nội bộ, tầng đẹp, giá tốt.</p>
-<p style="text-align: left; color: #ffffff;">+ Phân tích dòng tiền, tư vấn phương thức thanh toán phù hợp và tối ưu tài chính.</p>
-<p style="text-align: left; color: #ffffff;">+ Tư vấn chuyên sâu, hỗ trợ lựa chọn căn hộ, vị trí, tầng phù hợp để đầu tư sinh lời hoặc an cư lý tưởng.</p>
-<p style="text-align: left; color: #ffffff;">+ Hỗ trợ tham quan nhà mẫu và cung cấp đầy đủ hồ sơ, tài liệu dự án theo nhu cầu.</p>
+<div class="text-left dark" style="padding: 4px 6px;">
+<h3 style="text-align: left; color: #ffffff; line-height: 1.4; margin-bottom: 14px;"><strong>DỊCH VỤ TƯ VẤN BẤT ĐỘNG SẢN CHUYÊN NGHIỆP – CHIẾN LƯỢC CHỌN CĂN – TỐI ƯU TIỀM NĂNG SINH LỜI</strong></h3>
+<p style="text-align: left; color: #ffffff; font-size: 1.04rem; line-height: 1.65;">+ Đội ngũ chuyên viên giàu kinh nghiệm, cam kết tư vấn Đúng – Đủ – Chuyên nghiệp – Tận tâm – Minh bạch.</p>
+<p style="text-align: left; color: #ffffff; font-size: 1.04rem; line-height: 1.65;">+ Giỏ hàng đa dạng, phong phú, thường xuyên có suất nội bộ, tầng đẹp, giá tốt.</p>
+<p style="text-align: left; color: #ffffff; font-size: 1.04rem; line-height: 1.65;">+ Phân tích dòng tiền, tư vấn phương thức thanh toán phù hợp và tối ưu tài chính.</p>
+<p style="text-align: left; color: #ffffff; font-size: 1.04rem; line-height: 1.65;">+ Tư vấn chuyên sâu, hỗ trợ lựa chọn căn hộ, vị trí, tầng phù hợp để đầu tư sinh lời hoặc an cư lý tưởng.</p>
+<p style="text-align: left; color: #ffffff; font-size: 1.04rem; line-height: 1.65;">+ Hỗ trợ tham quan nhà mẫu và cung cấp đầy đủ hồ sơ, tài liệu dự án theo nhu cầu.</p>
 </div>
 		
 <style>
@@ -1947,26 +1725,130 @@ img, figure, .wp-caption {
 		
 <style>
 #section_1882090468 {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-#section_1882090468 .section-bg-overlay {
-  background-color: rgba(0, 0, 0, 0.686);
+  padding-top: 34px;
+  padding-bottom: 34px;
+  background-image: url("https://amycomplex.com/wp-content/uploads/2024/12/background-pattern.png") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
 }
 </style>
 	</section>
 	
-<div class="absolute-footer dark medium-text-center text-center">
+<div class="absolute-footer dark medium-text-center text-center maico-grand-footer">
   <div class="container clearfix">
-
-    
-    <div class="footer-primary pull-left" style="width: 100%; text-align: center;">
-            <div class="copyright-footer">
-        CÔNG TY TNHH MAICO GROUP - MST 3401146883 | Địa chỉ: 43 Đường 13, KĐT Vạn Phúc, P Hiệp Bình, TPHCM. | LH NVKD - Palm River: 0938819400 (Hồng Phúc) - Zalo/Phone | Email: support@realness.vn
+    <div class="footer-primary" style="width: 100%; float: none;">
+      <div class="copyright-footer maico-footer-card">
+        <div class="maico-footer-logo-box">
+          <img src="/maico-group-logo.png" onerror="this.onerror=null;this.src='maico-group-logo.png';" alt="CÔNG TY TNHH MAICO GROUP" class="maico-footer-logo" width="220" height="130" loading="lazy" />
+        </div>
+        <div class="maico-footer-details">
+          <div class="maico-company-title">CÔNG TY TNHH MAICO GROUP</div>
+          <ul class="maico-company-list">
+            <li>° MST 3401146883</li>
+            <li>° Địa chỉ: 43 Đường 13, KĐT Vạn Phúc, P Hiệp Bình, TPHCM.</li>
+            <li>° LH NVKD (Zalo/Phone) &nbsp;: <a href="https://zalo.me/0938819400" target="_blank" rel="noopener" style="color: #ffd966; font-weight: 700; text-decoration: none;">0938819400 (Hồng Phúc)</a>.</li>
+            <li>° Email: <a href="mailto:support@realness.vn" style="color: #ffffff; text-decoration: none;">support@realness.vn</a></li>
+          </ul>
+        </div>
       </div>
-          </div>
+    </div>
   </div>
 </div>
+<style>
+.maico-grand-footer {
+  background: linear-gradient(135deg, #0f291e 0%, #183d2c 55%, #0c2118 100%) !important;
+  border-top: 2px solid rgba(0, 168, 89, 0.65) !important;
+  padding: 28px 0 32px !important;
+  color: #ffffff !important;
+}
+.maico-footer-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: left;
+}
+.maico-footer-logo-box {
+  background: #ffffff;
+  padding: 14px 22px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.32);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.maico-footer-logo {
+  width: 210px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.maico-footer-details {
+  color: #ffffff;
+}
+.maico-company-title {
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+.maico-company-list {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.maico-company-list li {
+  font-size: 1.12rem;
+  line-height: 1.72;
+  color: #f4f9f6;
+  font-weight: 500;
+  margin-bottom: 3px !important;
+}
+@media (max-width: 767px) {
+  .maico-grand-footer {
+    padding: 24px 12px 30px !important;
+  }
+  .maico-footer-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    width: 100%;
+  }
+  .maico-footer-logo-box {
+    padding: 12px 20px;
+    border-radius: 12px;
+    align-self: center;
+  }
+  .maico-footer-logo {
+    width: 185px;
+  }
+  .maico-footer-details {
+    width: 100%;
+  }
+  .maico-company-title {
+    font-size: clamp(1.06rem, 4.8vw, 1.38rem);
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    margin-bottom: 10px;
+  }
+  .maico-company-list {
+    padding-right: 48px !important;
+  }
+  .maico-company-list li {
+    font-size: 1.04rem;
+    line-height: 1.65;
+  }
+}
+</style>
 
 <a href="#top" class="back-to-top button icon invert plain fixed bottom z-1 is-outline hide-for-medium circle" id="top-link" aria-label="Lên đầu trang"><i class="icon-angle-up" ></i></a>
 
@@ -2006,7 +1888,6 @@ img, figure, .wp-caption {
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-254"><a href="#thanhtoan">Thanh toán</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256"><a href="#tiendo">Tiến độ</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-258"><a href="#lienhe">Liên hệ</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-260"><a href="https://happy-oneelite.com/tin-tuc/">Tin tức</a></li>
 			</ul>
 		
 		
