@@ -161,10 +161,11 @@
     .pe-title {
       margin: 0;
       text-align: center;
-      font-size: 22px;
-      line-height: 1.28;
+      font-size: 18.5px;
+      line-height: 1.32;
       font-weight: 800;
       text-transform: uppercase;
+      text-wrap: balance;
       color: var(--pe-title-color);
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     }
@@ -359,13 +360,6 @@
       min-width: 0;
     }
 
-    .pe-unit-qty {
-      font-size: 10.5px;
-      font-weight: 700;
-      color: var(--pe-unit-active-border);
-      margin-top: 2px;
-    }
-
     /* Gold-bordered Navy-to-Emerald Gradient Submit CTA */
     .pe-submit-btn {
       width: 100%;
@@ -520,7 +514,7 @@
 
       <!-- WHITE BODY SECTION -->
       <div class="pe-body">
-        <h2 class="pe-title" id="peMainTitle">ĐĂNG KÝ NHẬN BÁO GIÁ</h2>
+        <h2 class="pe-title" id="peMainTitle">ĐĂNG KÝ TƯ VẤN VÀ NHẬN GIỎ HÀNG ƯU ĐÃI</h2>
         <div class="pe-project-name" id="peProjectName">TBS LAND</div>
 
         <div class="pe-date-wrap">
@@ -562,26 +556,26 @@
 
   <script>
     /**
-     * CẤU HÌNH ENGINE POP-UP DỰ ÁN (CÓ THỂ TUỲ CHỈNH TRỰC TIẾP HOẶC QUA URL QUERY)
-     * - Đổi tone màu, tên dự án, danh sách căn (theo loại và số lượng)
+     * CẤU HÌNH ENGINE POP-UP DỰ ÁN (CÓ THỂ TUỲ CHỈNH TRỰC TIPE HOẶC QUA URL QUERY)
+     * - Đổi tone màu, tên dự án, danh sách các loại căn
      * - Ngày tự động cập nhật Realtime khi nhúng vào web
      * - Tự động đổ Lead vào hệ thống Realness CRM
      */
     window.POPUP_ENGINE_CONFIG = {
       projectName: "TBS LAND",
       headerBadgeText: "TẢI BẢNG GIÁ",
-      formTitle: "ĐĂNG KÝ NHẬN BÁO GIÁ",
+      formTitle: "ĐĂNG KÝ TƯ VẤN VÀ NHẬN GIỎ HÀNG ƯU ĐÃI",
       datePrefix: "NGÀY:",
       realtimeDate: true,
       submitText: "ĐĂNG KÝ BÁO GIÁ",
       budgetRange: "3.5 - 12 Tỷ",
-      // Tuỳ biến danh sách căn theo Loại căn (label) & Số lượng/Rổ hàng (quantity)
+      // Tuỳ biến danh sách các loại căn (label)
       units: [
-        { label: "Căn 1PN", quantity: "", checked: true },
-        { label: "Căn 2PN", quantity: "", checked: false },
-        { label: "Căn 3PN", quantity: "", checked: false },
-        { label: "Nhà phố/Biệt thự", quantity: "", checked: true },
-        { label: "Shophouse", quantity: "", checked: false }
+        { label: "Căn 1PN", checked: true },
+        { label: "Căn 2PN", checked: false },
+        { label: "Căn 3PN", checked: false },
+        { label: "Nhà phố/Biệt thự", checked: true },
+        { label: "Shophouse", checked: false }
       ]
     };
 
@@ -604,24 +598,23 @@
 
       dateEl.textContent = (cfg.datePrefix || "NGÀY:") + " " + todayStr;
       projectEl.textContent = cfg.projectName || "TBS LAND";
-      titleEl.textContent = cfg.formTitle || "ĐĂNG KÝ NHẬN BÁO GIÁ";
+      titleEl.textContent = cfg.formTitle || "ĐĂNG KÝ TƯ VẤN VÀ NHẬN GIỎ HÀNG ƯU ĐÃI";
       badgeEl.textContent = cfg.headerBadgeText || "TẢI BẢNG GIÁ";
       submitBtn.textContent = cfg.submitText || "ĐĂNG KÝ BÁO GIÁ";
 
-      // 2. Render danh sách các loại căn & số lượng
+      // 2. Render danh sách các loại căn
       var units = Array.isArray(cfg.units) ? cfg.units : [];
       var isOdd = units.length % 2 === 1;
       unitsGrid.innerHTML = units
         .map(function (u, idx) {
           var isLastOdd = isOdd && idx === units.length - 1;
-          var val = u.quantity ? u.label + " (" + u.quantity + ")" : u.label;
           return (
             '<label class="pe-unit-card' +
             (isLastOdd ? " pe-unit-odd-last" : "") +
             (u.checked ? " is-active" : "") +
             '">' +
             '  <input type="checkbox" class="pe-unit-checkbox" name="unit_interest" value="' +
-            val.replace(/"/g, "&quot;") +
+            (u.label || "").replace(/"/g, "&quot;") +
             '"' +
             (u.checked ? " checked" : "") +
             " />" +
@@ -629,7 +622,6 @@
             "    <span>" +
             u.label +
             "</span>" +
-            (u.quantity ? '<span class="pe-unit-qty">' + u.quantity + "</span>" : "") +
             "  </span>" +
             "</label>"
           );

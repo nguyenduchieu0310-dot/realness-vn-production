@@ -212,7 +212,7 @@
     }
     .unit-editor-row {
       display: grid;
-      grid-template-columns: 24px 1fr 110px 28px;
+      grid-template-columns: 24px 1fr 28px;
       gap: 6px;
       align-items: center;
       background: rgba(15, 23, 42, 0.6);
@@ -371,7 +371,7 @@
         </div>
         <div class="field-row">
           <label class="field-label">Tiêu đề chính của Form:</label>
-          <input type="text" id="inpFormTitle" class="field-input" value="ĐĂNG KÝ NHẬN BÁO GIÁ" />
+          <input type="text" id="inpFormTitle" class="field-input" value="ĐĂNG KÝ TƯ VẤN VÀ NHẬN GIỎ HÀNG ƯU ĐÃI" />
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:end;" class="field-row">
           <div>
@@ -430,16 +430,16 @@
         </div>
       </div>
 
-      <!-- 3. TUỲ CHỈNH CÁC LOẠI CĂN & SỐ LƯỢNG -->
+      <!-- 3. TUỲ CHỈNH CÁC LOẠI CĂN -->
       <div class="panel-section">
         <h3 class="panel-title">
-          <span>3. Tuỳ Chỉnh Loại Căn &amp; Số Lượng</span>
+          <span>3. Tuỳ Chỉnh Các Loại Căn</span>
           <button type="button" id="btnAddUnit" style="padding:4px 10px;border-radius:6px;border:none;background:#10b981;color:#fff;font-size:11px;font-weight:800;cursor:pointer;">
             + Thêm Loại Căn
           </button>
         </h3>
         <div style="font-size:11px;color:#94a3b8;margin-bottom:8px;">
-          Tích chọn ô đầu để đặt mặc định. Có thể thêm số lượng/ghi chú rổ hàng (VD: <em>Còn 5 căn</em>, <em>Suất ngoại giao</em>) hoặc để trống.
+          Tích chọn ô đầu để đặt mặc định cho loại căn khi khách mở Pop-up.
         </div>
         <div class="unit-editor-list" id="unitEditorList"></div>
       </div>
@@ -497,7 +497,7 @@
       var state = {
         projectName: rawProjectParam,
         headerBadgeText: params.get("badge") || "TẢI BẢNG GIÁ",
-        formTitle: params.get("title") || "ĐĂNG KÝ NHẬN BÁO GIÁ",
+        formTitle: params.get("title") || "ĐĂNG KÝ TƯ VẤN VÀ NHẬN GIỎ HÀNG ƯU ĐÃI",
         showDate: params.get("showDate") === "1",
         datePrefix: params.get("datePrefix") || "NGÀY:",
         realtimeDate: params.get("realtime") === "1",
@@ -560,25 +560,18 @@
             '<input type="text" class="field-input" value="' +
             (u.label || "").replace(/"/g, "&quot;") +
             '" placeholder="Tên loại căn (VD: Căn 1PN)" style="padding:6px 8px;font-size:12px;" />' +
-            '<input type="text" class="field-input" value="' +
-            (u.quantity || "").replace(/"/g, "&quot;") +
-            '" placeholder="Số lượng / Rổ hàng" style="padding:6px 8px;font-size:11.5px;" />' +
             '<button type="button" class="unit-del-btn" title="Xoá loại căn">&times;</button>';
 
           var chk = row.querySelector('input[type="checkbox"]');
-          var inputs = row.querySelectorAll('input[type="text"]');
+          var inpLabel = row.querySelector('input[type="text"]');
           var delBtn = row.querySelector(".unit-del-btn");
 
           chk.addEventListener("change", function (e) {
             state.units[idx].checked = e.target.checked;
             refreshAll();
           });
-          inputs[0].addEventListener("input", function (e) {
+          inpLabel.addEventListener("input", function (e) {
             state.units[idx].label = e.target.value;
-            refreshAll();
-          });
-          inputs[1].addEventListener("input", function (e) {
-            state.units[idx].quantity = e.target.value;
             refreshAll();
           });
           delBtn.addEventListener("click", function () {
@@ -649,73 +642,73 @@
         var detectedName = "GREEN SKYLINE";
         var detectedTheme = "emerald-gold";
         var detectedUnits = [
-          { id: "u-1", label: "Căn Studio", quantity: "", checked: false },
-          { id: "u-2", label: "Căn 1PN+", quantity: "", checked: true },
-          { id: "u-3", label: "Căn 2PN", quantity: "", checked: true },
-          { id: "u-4", label: "Căn 3PN", quantity: "", checked: false },
-          { id: "u-5", label: "Duplex và Penthouse", quantity: "", checked: false },
-          { id: "u-6", label: "Shophouse", quantity: "", checked: false },
+          { id: "u-1", label: "Căn Studio", checked: false },
+          { id: "u-2", label: "Căn 1PN+", checked: true },
+          { id: "u-3", label: "Căn 2PN", checked: true },
+          { id: "u-4", label: "Căn 3PN", checked: false },
+          { id: "u-5", label: "Duplex và Penthouse", checked: false },
+          { id: "u-6", label: "Shophouse", checked: false },
         ];
 
         if (lower.indexOf("the-prive") !== -1 || lower.indexOf("theprive") !== -1) {
           detectedName = "THE PRIVÉ AN PHÚ";
           detectedTheme = "navy-gold";
           detectedUnits = [
-            { id: "tp-1", label: "Căn 1PN Luxury", quantity: "", checked: false },
-            { id: "tp-2", label: "Căn 2PN View Sông", quantity: "Hot", checked: true },
-            { id: "tp-3", label: "Căn 3PN Dual-Key", quantity: "", checked: false },
-            { id: "tp-4", label: "Sky Villa / Penthouse", quantity: "Giới hạn", checked: true },
-            { id: "tp-5", label: "Shophouse Bến Du Thuyền", quantity: "", checked: false },
+            { id: "tp-1", label: "Căn 1PN Luxury", checked: false },
+            { id: "tp-2", label: "Căn 2PN View Sông", checked: true },
+            { id: "tp-3", label: "Căn 3PN Dual-Key", checked: false },
+            { id: "tp-4", label: "Sky Villa / Penthouse", checked: true },
+            { id: "tp-5", label: "Shophouse Bến Du Thuyền", checked: false },
           ];
         } else if (lower.indexOf("palm-river") !== -1 || lower.indexOf("palmriver") !== -1) {
           detectedName = "PALM RIVER LUXURY";
           detectedTheme = "teal-bronze";
           detectedUnits = [
-            { id: "pr-1", label: "Căn 1PN", quantity: "", checked: false },
-            { id: "pr-2", label: "Căn 2PN View Sông", quantity: "Còn 9 căn", checked: true },
-            { id: "pr-3", label: "Căn 3PN Góc Panorama", quantity: "", checked: false },
-            { id: "pr-4", label: "Nhà phố/Biệt thự", quantity: "", checked: true },
-            { id: "pr-5", label: "Shophouse Đại Lộ", quantity: "", checked: false },
+            { id: "pr-1", label: "Căn 1PN", checked: false },
+            { id: "pr-2", label: "Căn 2PN View Sông", checked: true },
+            { id: "pr-3", label: "Căn 3PN Góc Panorama", checked: false },
+            { id: "pr-4", label: "Nhà phố/Biệt thự", checked: true },
+            { id: "pr-5", label: "Shophouse Đại Lộ", checked: false },
           ];
         } else if (lower.indexOf("happy-one") !== -1 || lower.indexOf("happyone") !== -1) {
           detectedName = "HAPPY ONE ELITE";
           detectedTheme = "navy-gold";
           detectedUnits = [
-            { id: "ho-1", label: "Căn Studio / 1PN+", quantity: "Full NT", checked: true },
-            { id: "ho-2", label: "Căn 2PN", quantity: "Còn 14 căn", checked: true },
-            { id: "ho-3", label: "Căn 3PN Góc", quantity: "", checked: false },
-            { id: "ho-4", label: "Penthouse / Duplex", quantity: "", checked: false },
-            { id: "ho-5", label: "Shophouse Khối Đế", quantity: "", checked: false },
+            { id: "ho-1", label: "Căn Studio / 1PN+", checked: true },
+            { id: "ho-2", label: "Căn 2PN", checked: true },
+            { id: "ho-3", label: "Căn 3PN Góc", checked: false },
+            { id: "ho-4", label: "Penthouse / Duplex", checked: false },
+            { id: "ho-5", label: "Shophouse Khối Đế", checked: false },
           ];
         } else if (lower.indexOf("tt-genesis") !== -1 || lower.indexOf("genesis") !== -1) {
           detectedName = "TT GENESIS NHÀ BÈ";
           detectedTheme = "burgundy-gold";
           detectedUnits = [
-            { id: "tt-1", label: "Căn 1PN (48m²)", quantity: "", checked: true },
-            { id: "tt-2", label: "Căn 2PN (68m²)", quantity: "Hot", checked: true },
-            { id: "tt-3", label: "Căn 3PN Góc", quantity: "", checked: false },
-            { id: "tt-4", label: "Duplex / Penthouse", quantity: "", checked: false },
-            { id: "tt-5", label: "Shophouse Đào Sư Tích", quantity: "", checked: false },
+            { id: "tt-1", label: "Căn 1PN (48m²)", checked: true },
+            { id: "tt-2", label: "Căn 2PN (68m²)", checked: true },
+            { id: "tt-3", label: "Căn 3PN Góc", checked: false },
+            { id: "tt-4", label: "Duplex / Penthouse", checked: false },
+            { id: "tt-5", label: "Shophouse Đào Sư Tích", checked: false },
           ];
         } else if (lower.indexOf("vlasta") !== -1) {
           detectedName = "VLASTA PREMIER";
           detectedTheme = "navy-gold";
           detectedUnits = [
-            { id: "vl-1", label: "Căn 1PN (47m²)", quantity: "", checked: false },
-            { id: "vl-2", label: "Căn 2PN (64-84m²)", quantity: "Phổ biến", checked: true },
-            { id: "vl-3", label: "Căn 3PN View Sông", quantity: "", checked: true },
-            { id: "vl-4", label: "Penthouse / Sky Villa", quantity: "", checked: false },
-            { id: "vl-5", label: "Shophouse Khối Đế", quantity: "", checked: false },
+            { id: "vl-1", label: "Căn 1PN (47m²)", checked: false },
+            { id: "vl-2", label: "Căn 2PN (64-84m²)", checked: true },
+            { id: "vl-3", label: "Căn 3PN View Sông", checked: true },
+            { id: "vl-4", label: "Penthouse / Sky Villa", checked: false },
+            { id: "vl-5", label: "Shophouse Khối Đế", checked: false },
           ];
         } else if (lower.indexOf("global-city") !== -1 || lower.indexOf("masterise") !== -1) {
           detectedName = "THE GLOBAL CITY";
           detectedTheme = "obsidian-gold";
           detectedUnits = [
-            { id: "gc-1", label: "Căn 1PN - 2PN", quantity: "", checked: false },
-            { id: "gc-2", label: "Căn 3PN View Kênh Đào", quantity: "", checked: true },
-            { id: "gc-3", label: "Penthouse / Duplex", quantity: "", checked: false },
-            { id: "gc-4", label: "Nhà phố/Biệt thự", quantity: "SOHO", checked: true },
-            { id: "gc-5", label: "Shophouse Thương Mại", quantity: "", checked: false },
+            { id: "gc-1", label: "Căn 1PN - 2PN", checked: false },
+            { id: "gc-2", label: "Căn 3PN View Kênh Đào", checked: true },
+            { id: "gc-3", label: "Penthouse / Duplex", checked: false },
+            { id: "gc-4", label: "Nhà phố/Biệt thự", checked: true },
+            { id: "gc-5", label: "Shophouse Thương Mại", checked: false },
           ];
         } else if (lower.indexOf("green-skyline") !== -1 || lower.indexOf("tbs") !== -1) {
           detectedName = "GREEN SKYLINE";
@@ -819,7 +812,6 @@
         state.units.push({
           id: "u-" + Date.now(),
           label: "Căn Penthouse",
-          quantity: "",
           checked: false,
         });
         renderUnitEditor();

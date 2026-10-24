@@ -115,19 +115,19 @@
   };
 
   var DEFAULT_UNITS = [
-    { id: "u-1", label: "Căn Studio", quantity: "", checked: false },
-    { id: "u-2", label: "Căn 1PN+", quantity: "", checked: true },
-    { id: "u-3", label: "Căn 2PN", quantity: "", checked: true },
-    { id: "u-4", label: "Căn 3PN", quantity: "", checked: false },
-    { id: "u-5", label: "Duplex và Penthouse", quantity: "", checked: false },
-    { id: "u-6", label: "Shophouse", quantity: "", checked: false },
+    { id: "u-1", label: "Căn Studio", checked: false },
+    { id: "u-2", label: "Căn 1PN+", checked: true },
+    { id: "u-3", label: "Căn 2PN", checked: true },
+    { id: "u-4", label: "Căn 3PN", checked: false },
+    { id: "u-5", label: "Duplex và Penthouse", checked: false },
+    { id: "u-6", label: "Shophouse", checked: false },
   ];
 
   var DEFAULT_CONFIG = {
     projectId: "green-skyline",
     projectName: "GREEN SKYLINE",
     headerBadgeText: "TẢI BẢNG GIÁ",
-    formTitle: "ĐĂNG KÝ NHẬN BÁO GIÁ",
+    formTitle: "ĐĂNG KÝ TƯ VẤN VÀ NHẬN GIỎ HÀNG ƯU ĐÃI",
     showDate: false,
     datePrefix: "NGÀY:",
     realtimeDate: false,
@@ -567,10 +567,11 @@
       "  margin: 0 !important;" +
       "  padding: 0 !important;" +
       "  text-align: center !important;" +
-      "  font-size: 21px !important;" +
-      "  line-height: 1.28 !important;" +
+      "  font-size: 18.5px !important;" +
+      "  line-height: 1.32 !important;" +
       "  font-weight: 800 !important;" +
       "  text-transform: uppercase !important;" +
+      "  text-wrap: balance;" +
       "  color: var(--pe-title-color) !important;" +
       "  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);" +
       "}" +
@@ -756,12 +757,6 @@
       "  line-height: 1.22;" +
       "  min-width: 0;" +
       "}" +
-      "#" + scopeId + " .pe-unit-qty {" +
-      "  font-size: 11px;" +
-      "  font-weight: 700;" +
-      "  color: var(--pe-unit-active-border);" +
-      "  margin-top: 2px;" +
-      "}" +
       "#" + scopeId + " .pe-submit-btn {" +
       "  width: 100% !important;" +
       "  height: 50px !important;" +
@@ -838,7 +833,7 @@
       "}" +
       "@media (max-width: 420px) {" +
       "  #" + scopeId + " .pe-body { padding: 15px 14px 18px; }" +
-      "  #" + scopeId + " .pe-title { font-size: 18.5px !important; }" +
+      "  #" + scopeId + " .pe-title { font-size: 17px !important; }" +
       "  #" + scopeId + " .pe-project-name { font-size: 20px !important; }" +
       "  #" + scopeId + " .pe-unit-card { font-size: 12.8px !important; padding: 6px 8px !important; }" +
       "  #" + scopeId + " .pe-unit-card.pe-unit-odd-last { width: 62%; }" +
@@ -936,15 +931,11 @@
         var checkedAttr = unit.checked ? " checked" : "";
         var activeClass = unit.checked ? " is-active" : "";
         var oddClass = isLastOdd ? " pe-unit-odd-last" : "";
-        var qtyHtml = unit.quantity
-          ? '<span class="pe-unit-qty">' + escapeHtml(unit.quantity) + "</span>"
-          : "";
-        var unitValue = unit.quantity ? unit.label + " (" + unit.quantity + ")" : unit.label;
 
         return (
           '<label class="pe-unit-card' + oddClass + activeClass + '">' +
           '  <input type="checkbox" class="pe-unit-checkbox" name="unit_interest" value="' +
-          escapeHtml(unitValue) +
+          escapeHtml(unit.label) +
           '"' +
           checkedAttr +
           " />" +
@@ -952,7 +943,6 @@
           "    <span>" +
           escapeHtml(unit.label) +
           "</span>" +
-          qtyHtml +
           "  </span>" +
           "</label>"
         );
@@ -991,7 +981,7 @@
       '    <h2 id="' +
       scopeId +
       '-title" class="pe-title">' +
-      escapeHtml(config.formTitle || "ĐĂNG KÝ NHẬN BÁO GIÁ") +
+      escapeHtml(config.formTitle || "ĐĂNG KÝ TƯ VẤN VÀ NHẬN GIỎ HÀNG ƯU ĐÃI") +
       "</h2>" +
       '    <div class="pe-project-name' + (shouldShowDate ? "" : " pe-no-date") + '">' +
       escapeHtml(config.projectName || "TBS LAND") +
