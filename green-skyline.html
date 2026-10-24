@@ -2705,6 +2705,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			Trình duyệt của bạn không hỗ trợ phát video.
 		</video>
 	</div>
+
+	<div class="embed-lead-form-wrap" id="embed_form_green_skyline_bottom" style="width: 100%; margin: 14px auto 4px auto;">
+		<iframe id="rf_inline_embed_form" src="https://realness.vn/embed/lead-form?project=green-skyline&theme=light&style=popup&url=https%3A%2F%2Frealness.vn%2Fdu-an%2Fgreen-skyline" width="100%" height="640" frameborder="0" style="border:none;border-radius:16px;max-width:480px;width:100%;margin:0 auto;display:block;" title="Đăng ký nhận báo giá TBS LAND"></iframe>
+	</div>
 		</div>
 
 		
@@ -2995,6 +2999,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
 (function() {
     function mountGreenSkylinePopup() {
+        var inlineIframe = document.getElementById("rf_inline_embed_form");
+        if (inlineIframe && window.location && window.location.hostname && window.location.hostname !== "realness.vn") {
+            inlineIframe.src = "/embed/lead-form/?project=green-skyline&theme=light&style=popup&url=https%3A%2F%2Frealness.vn%2Fdu-an%2Fgreen-skyline";
+        }
+        window.addEventListener("message", function(ev) {
+            if (!ev || !ev.data) return;
+            if (ev.data.type === "RF_LEAD_FORM_RESIZE" && inlineIframe && ev.data.height > 300) {
+                inlineIframe.style.height = (Number(ev.data.height) + 12) + "px";
+            }
+            if (ev.data.type === "RF_LEAD_SUBMITTED" || ev.data.type === "RF_POPUP_LEAD_SUBMITTED") {
+                try {
+                    window.localStorage.setItem("rf_pe_converted_green-skyline", "1");
+                    window.sessionStorage.setItem("rf_pe_converted_green-skyline", "1");
+                } catch (err) {}
+            }
+        });
+
         if (!window.RealnessPopupEngine) return;
         window.RealnessPopupEngine.initModalPopup({
             projectId: "green-skyline",
