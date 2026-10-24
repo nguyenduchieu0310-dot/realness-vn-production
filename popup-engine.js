@@ -136,7 +136,7 @@
     phonePlaceholder: "Số điện thoại *",
     showEmailField: false,
     emailPlaceholder: "Email nhận bảng giá (Tuỳ chọn)",
-    submitText: "ĐĂNG KÝ BÁO GIÁ",
+    submitText: "ĐĂNG KÝ",
     themePreset: "emerald-gold",
     customColors: null,
     units: DEFAULT_UNITS,
@@ -447,13 +447,13 @@
       "  --pe-btn-mid: " + theme.btnGradMid + ";" +
       "  --pe-btn-end: " + theme.btnGradEnd + ";" +
       "  --pe-icon-check: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'></polyline></svg>\");" +
-      "  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif !important;" +
+      "  font-family: 'Be Vietnam Pro', 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif !important;" +
       "  box-sizing: border-box;" +
       "  line-height: 1.4;" +
       "}" +
       "#" + scopeId + " *, #" + scopeId + " *::before, #" + scopeId + " *::after {" +
       "  box-sizing: border-box;" +
-      "  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;" +
+      "  font-family: 'Be Vietnam Pro', 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;" +
       "}" +
       "dialog#" + scopeId + "-dialog {" +
       "  padding: 0 !important;" +
@@ -820,7 +820,7 @@
       "  border: 2px solid " + theme.goldPrimary + " !important;" +
       "  background: linear-gradient(90deg, " + theme.btnGradStart + ", " + theme.btnGradEnd + ") !important;" +
       "  color: #ffffff !important;" +
-      "  font-family: 'Montserrat', sans-serif !important;" +
+      "  font-family: 'Be Vietnam Pro', 'Inter', 'Roboto', Arial, sans-serif !important;" +
       "  font-size: 13px !important;" +
       "  font-weight: 800 !important;" +
       "  text-transform: uppercase !important;" +
@@ -889,7 +889,7 @@
       '    </defs>' +
       '    <!-- Gold PRICE Folder Tab on Right -->' +
       '    <path d="M84 14 H103 C107 14 110 17 110 21 V74 C110 78 107 81 103 81 H84 V14 Z" fill="url(#peGoldTab)" />' +
-      '    <text x="99" y="48" fill="#ffffff" font-size="9.5" font-weight="800" font-family="Montserrat, Arial, sans-serif" letter-spacing="0.8" transform="rotate(90 99 48)" text-anchor="middle">PRICE</text>' +
+      '    <text x="99" y="48" fill="#ffffff" font-size="9.5" font-weight="800" font-family="Be Vietnam Pro, Arial, sans-serif" letter-spacing="0.8" transform="rotate(90 99 48)" text-anchor="middle">PRICE</text>' +
       '    <!-- Main White Document Sheet -->' +
       '    <path d="M36 8 H78 L96 26 V94 C96 98.4 92.4 102 88 102 H36 C31.6 102 28 98.4 28 94 V16 C28 11.6 31.6 8 36 8 Z" fill="url(#peSheetBg)" />' +
       '    <!-- Folded Corner -->' +
@@ -1010,7 +1010,7 @@
       unitsHtml +
       "      </div>" +
       '      <button type="submit" class="pe-submit-btn">' +
-      escapeHtml(config.submitText || "ĐĂNG KÝ BÁO GIÁ") +
+      escapeHtml(config.submitText || "ĐĂNG KÝ") +
       "</button>" +
       "    </form>" +
       '    <div class="pe-success-box" aria-live="polite"></div>' +
@@ -1162,11 +1162,21 @@
     });
   }
 
+  function ensureBeVietnamProFont() {
+    if (typeof document !== "undefined" && document.head && !document.querySelector('link[href*="Be+Vietnam+Pro"]')) {
+      var fontLink = document.createElement("link");
+      fontLink.rel = "stylesheet";
+      fontLink.href = "https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap";
+      document.head.appendChild(fontLink);
+    }
+  }
+
   /**
    * Render trực tiếp vào 1 container DOM (Dùng cho Live Preview hoặc Inline Form)
    */
   function renderIntoContainer(containerEl, customConfig, onLeadDispatched) {
     if (!containerEl) return;
+    ensureBeVietnamProFont();
     var config = Object.assign({}, DEFAULT_CONFIG, customConfig || {});
     var scopeId = "rf-pe-" + Math.random().toString(36).substring(2, 8);
     var theme = resolveTheme(config);
@@ -1198,13 +1208,8 @@
     var scopeId = "rf-pe-modal";
     var theme = resolveTheme(config);
 
-    // Ensure Montserrat font is loaded on host page
-    if (document.head && !document.querySelector('link[href*="Montserrat"]')) {
-      var fontLink = document.createElement("link");
-      fontLink.rel = "stylesheet";
-      fontLink.href = "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap";
-      document.head.appendChild(fontLink);
-    }
+    // Ensure Be Vietnam Pro font is loaded on host page
+    ensureBeVietnamProFont();
 
     var existingStyle = document.getElementById(scopeId + "-style");
     if (existingStyle && existingStyle.parentNode) existingStyle.parentNode.removeChild(existingStyle);
