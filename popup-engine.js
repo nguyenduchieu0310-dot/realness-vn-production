@@ -144,7 +144,7 @@
     delaySeconds: 12,
     repeatDelaySeconds: 60,
     maxAutoTriggers: 2,
-    showFloatingLauncher: true,
+    showFloatingLauncher: false,
     floatingLauncherText: "Tải Bảng Giá",
     agentName: "Hồng Phúc",
     agentPhone: "0938 819 400",
@@ -1249,6 +1249,9 @@
       }
     }
 
+    global.__rfPopupModalOpen = openPopup;
+    global.__rfPopupModalClose = closePopup;
+
     if (config.showFloatingLauncher) {
       var launcherBtn = document.createElement("button");
       launcherBtn.id = scopeId + "-launcher";
@@ -1265,22 +1268,25 @@
     }
 
     // Bind any host page trigger elements ([data-rf-popup-open], a[href="#popup_auto"], a[href="#bao-gia"], .btn_popup)
-    document.addEventListener(
-      "click",
-      function (e) {
-        var trigger =
-          e.target && e.target.closest
-            ? e.target.closest('[data-rf-popup-open], a[href="#popup_auto"], a[href="#bao-gia"], .btn_popup')
-            : null;
-        if (trigger) {
-          e.preventDefault();
-          e.stopPropagation();
-          if (typeof e.stopImmediatePropagation === "function") e.stopImmediatePropagation();
-          openPopup();
-        }
-      },
-      true
-    );
+    if (!global.__rfPopupClickBound) {
+      global.__rfPopupClickBound = true;
+      document.addEventListener(
+        "click",
+        function (e) {
+          var trigger =
+            e.target && e.target.closest
+              ? e.target.closest('[data-rf-popup-open], a[href="#popup_auto"], a[href="#bao-gia"], .btn_popup')
+              : null;
+          if (trigger && typeof global.__rfPopupModalOpen === "function") {
+            e.preventDefault();
+            e.stopPropagation();
+            if (typeof e.stopImmediatePropagation === "function") e.stopImmediatePropagation();
+            global.__rfPopupModalOpen();
+          }
+        },
+        true
+      );
+    }
 
     // Smart Non-Intrusive 2-Stage Cadence
     var projSlug = String(config.projectId || config.projectName || "default").toLowerCase().replace(/[^a-z0-9]+/g, "-");
@@ -1398,9 +1404,12 @@
     };
   }
 
-  // Auto-init if loaded via <script data-rf-popup-auto="true" ...>
+  // Auto-init if loaded via <script data-rf-popup-config="..." ...>
   function autoInitFromScriptTag() {
-    var scriptEl = document.currentScript || document.querySelector("script[data-rf-popup-config], script[data-project-name]");
+    var scriptEl = document.currentScript;
+    if (!scriptEl || (!scriptEl.getAttribute("data-rf-popup-config") && !scriptEl.getAttribute("data-project-name") && !scriptEl.getAttribute("data-rf-popup-auto"))) {
+      scriptEl = document.querySelector("script[data-rf-popup-config], script[data-project-name], script[data-rf-popup-auto]");
+    }
     if (!scriptEl) return;
     var rawJson = scriptEl.getAttribute("data-rf-popup-config");
     var cfg = {};
@@ -1440,10 +1449,33 @@
     resolveTheme: resolveTheme,
     renderIntoContainer: renderIntoContainer,
     initModalPopup: initModalPopup,
+    open: function () {
+      if (typeof global.__rfPopupModalOpen === "function") global.__rfPopupModalOpen();
+    },
+    close: function () {
+      if (typeof global.__rfPopupModalClose === "function") global.__rfPopupModalClose();
+    },
     dispatchLeadToCrm: dispatchLeadToCrm,
     buildPopupStyles: buildPopupStyles,
     buildFormInnerHtml: buildFormInnerHtml,
   };
+
+  if (typeof global.addEventListener === "function") {
+    global.addEventListener("message", function (ev) {
+      if (!ev || !ev.data || ev.data.type !== "RF_LEAD_FORM_RESIZE") return;
+      var targetH = Math.ceil(Number(ev.data.height));
+      if (!(targetH >= 220 && targetH <= 1200)) return;
+      var frames = document.querySelectorAll('iframe[src*="/embed/lead-form"], iframe[src*="/embed/form"]');
+      for (var i = 0; i < frames.length; i++) {
+        var f = frames[i];
+        if (!ev.source || f.contentWindow === ev.source) {
+          if (Math.abs(f.offsetHeight - targetH) > 2) {
+            f.style.height = targetH + "px";
+          }
+        }
+      }
+    });
+  }
 
   autoInitFromScriptTag();
 })(typeof window !== "undefined" ? window : this);
