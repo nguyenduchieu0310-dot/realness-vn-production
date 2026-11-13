@@ -2,6 +2,7 @@ User-agent: *
 Disallow: /admin/
 Disallow: /tim-kiem/
 Disallow: /so-sanh-can/
-Disallow: /*?*
+Disallow: /*?s=*
+Disallow: /*?q=*
 
 Sitemap: https://realness.vn/sitemap.xml
